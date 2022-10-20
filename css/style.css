@@ -1,0 +1,61 @@
+:root {
+    --text-color: #111111;
+    --primery-color: #3E80F7;
+    --ui-color: #297FFF --bg-color: #ffffff;
+    --section-color: #DAF1F9;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets\fonts\Montserrat-SemiBold.woff2') format('woff2'),
+        url('assets\fonts\Montserrat-SemiBold.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+}
+
+@font-face {
+    src: url('assets\fonts\Montserrat-Medium.woff2') format('woff2'),
+        url('assets\fonts\Montserrat-Medium.woff') format('woff');
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+@font-face {
+    src: url('assets\fonts\Montserrat-Bold.woff2') format('woff2'),
+        url('assets\fonts\Montserrat-Bold.woff') format('woff');
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+
+html {
+    font-size: 1rem;
+}
+
+.h3 {
+    font-family: 'Montserrat Medium', Arial, sans-serif;
+    font-size: 1.125rem;
+    line-height: 120%;
+    color: var(--text-color);
+}
+
+.h2 {
+    font-size: 1.875rem;
+    line-height: 120%;
+    color: #ABB1C5;
+}
+
+.h1 {
+    font-family: 'Montserrat-SemiBold', Arial, sans-serif;
+    font-size: 3.125rem;
+    line-height: 120%;
+    color: var(--text-color);
+}
