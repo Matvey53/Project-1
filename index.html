@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="Project-1\css\style.css">
+    <link rel="stylesheet" href="css\style.css">
     <title>BikePark</title>
 </head>
 
@@ -20,23 +19,35 @@
         <nav class="header__navigation nav">
             <ul class="nav__menu">
                 <li class="menu__item">
-                    <a href="" class="menu__link"> О нас</a>
+                    <a href="" class="menu__link">
+                        <h4>О нас</h4>
+                    </a>
                 </li>
                 <li class="submenu__item">
-                    <a href="#" class="submenu__link">Аренда</a>
+                    <a href="#" class="submenu__link">
+                        <h4 class="rent">Аренда</h4>
+                    </a>
                 </li>
                 <li class="submenu__item">
-                    <a href="#" class="submenu__link">Доставка</a>
+                    <a href="#" class="submenu__link">
+                        <h4>Доставка</h4>
+                    </a>
                 </li>
                 <li class="submenu__item">
-                    <a href="#" class="submenu__link">Где кататься</a>
+                    <a href="#" class="submenu__link">
+                        <h4>Где кататься</h4>
+                    </a>
                 </li>
                 <li class="submenu__item">
-                    <a href="#" class="submenu__link">Контакты</a>
+                    <a href="#" class="submenu__link">
+                        <h4>Контакты</h4>
+                    </a>
                 </li>
                 <p>
                 <div class="header__contacts">
-                    <a href="tel:+971525634064">+971 52 563 4064</a>
+                    <a href="tel:+971525634064">
+                        <h4 class="number">+971 52 563 4064</h4>
+                    </a>
                 </div>
                 </p>
                 <p>
@@ -50,7 +61,7 @@
                     <button class="header__call btn" type="button">FEEDBACK</button>
                 </p>
                 <time datetime="09:00">9:00 PM</time><br>
-                Time in Dubai
+                <h5>Time in Dubai</h5>
                 <div class="change-language">
                     <button class="change-language__open" type="button">RU<span class="caret"></span></button>
                     <ul class="header__language language">
@@ -70,18 +81,24 @@
             </div>
             <div>
                 <article>
-                    <h3>Шлем</h3>
-                    <p>Бесплатно</p>
+                    <h3 class="access-velo">Шлем</h3>
+                    <p>
+                    <h3 class="access-price">Бесплатно</h3>
+                    </p>
                     <figure><img src="assets\img\Frame 21.jpg" alt="Шлем"></figure>
                 </article>
                 <article>
-                    <h3>Фонарик</h3>
-                    <p>Бесплатно</p>
+                    <h3 class="access-velo">Фонарик</h3>
+                    <p>
+                    <h3 class="access-price">Бесплатно</h3>
+                    </p>
                     <figure><img src="assets\img\Frame 20.jpg" alt="Фонарик"></figure>
                 </article>
                 <article>
-                    <h3>Замок</h3>
-                    <p>Бесплатно</p>
+                    <h3 class="access-velo">Замок</h3>
+                    <p>
+                    <h3 class="access-price">Бесплатно</h3>
+                    </p>
                     <figure><img src="assets\img\Frame 19.jpg" alt="Замок"></figure>
                 </article>
             </div>
@@ -89,62 +106,75 @@
         <section>
             <ul class="time-rent">
                 <li>
-                    <h2>Тип аренды</h2>
+                    <h4 class="time-rent">Тип аренды</h4>
                 </li>
                 <ul>
-                    <li><button class="time-rent" type="button"> По дням</button></li>
-                    <li><button class="time-rent" type="button">2 часа</button></li>
+                    <li><button class="time-rent" type="button">
+                            <h3> По дням</h3>
+                        </button></li>
+                    <li><button class="time-rent" type="button">
+                            <h3> 2 часа </h3>
+
+                        </button></li>
                 </ul>
                 <li>
-                    <h2>Дата и время начала</h2>
+                    <h4 class="time-rent">Дата и время начала</h4>
                 </li>
                 <input type="datetime-local" id="localdate" name="date" />
                 <li>
-                    <h2>Дата и время конца</h2>
+                    <h4 class="time-rent">Дата и время конца</h4>
                 </li>
                 <input type="datetime-local" id="localdate" name="date" />
                 <li>
-                    <h2>Доставка</h2>
+                    <h4 class="time-rent">Доставка</h4>
                 </li>
                 <button class="change-adress" type="button">По адресу <span class="caret"></span></button>
             </ul>
         </section>
 
         <section>
-            <li>Тип велосипеда</li>
+            <li>
+                <h4>Тип велосипеда </h4>
+            </li>
             <div>
                 <article class="type_velo">
                     <img src="assets\img\image 29.jpg" alt="Велосипед">
                     <h3>Алюминий</h3>
-                    <p>90 AED
-                        <a href="">?</a>
-                        <button>+</button>
+                    <p>
+                    <h3>90 AED</h3>
+                    <a href="">?</a>
+                    <button>+</button>
                 </article>
                 <article class="type_velo">
                     <img src="assets\img\image 29.jpg" alt="Велосипед">
                     <h3>Карбон</h3>
-                    <p>180 AED
-                        <a href="">?</a>
-                        <button>+</button>
+                    <p>
+                    <h3>180 AED</h3>
+                    <a href="">?</a>
+                    <button>+</button>
                 </article>
                 <article class="type_velo">
                     <img src="assets\img\image 29.jpg" alt="Велосипед">
                     <h3>Горный/городской</h3>
-                    <p>90 AED
-                        <a href="">?</a>
-                        <button>+</button>
+                    <p>
+                    <h3>90 AED</h3>
+                    <a href="">?</a>
+                    <button>+</button>
                 </article>
                 <article class="type_velo">
                     <img src="assets\img\image 29.jpg" alt="Велосипед">
                     <h3>Городской эконом</h3>
-                    <p>45 AED
-                        <a href="">?</a>
-                        <button>+</button>
+                    <p>
+                    <h3>45 AED</h3>
+                    <a href="">?</a>
+                    <button>+</button>
                 </article>
             </div>
-            <p>Легкие, надежные и легко управляются.
+            <p>
+            <h4>Легкие, надежные и легко управляются.
                 Возможны вибрации
-                из-за неровностей дороги.</p>
+                из-за неровностей дороги.</h4>
+            </p>
             <button class="find-velo" type="button">Найти</button>
 
 
@@ -158,21 +188,43 @@
 
 <footer>
     <ul>
-        <li><a href="#">Аренда велосипедов</a></li>
-        <li><a href="#">Правила</a></li>
-        <li><a href="#">Отзывы</a></li>
-        <li><a href="#">Контакты</a></li>
-        <li><a href="#">Обратная связь</a></li>
+        <li><a href="#">
+                <h3>Аренда велосипедов</h3>
+            </a></li>
+        <li><a href="#">
+                <h3>Правила</h3>
+            </a></li>
+        <li><a href="#">
+                <h3>Отзывы</h3>
+            </a></li>
+        <li><a href="#">
+                <h3>Контакты</h3>
+            </a></li>
+        <li><a href="#">
+                <h3>Обратная связь</h3>
+            </a></li>
     </ul>
     <ul>
-        <li><a href="#">Алюминий</a></li>
-        <li><a href="#">Карбон</a></li>
-        <li><a href="#">Горные/городские</a></li>
-        <li><a href="#">Городские эконом</a></li>
+        <li><a href="#">
+                <h4 class="type-velo">Алюминий</h4>
+            </a></li>
+        <li><a href="#">
+                <h4 class="type-velo">Карбон</h4>
+            </a></li>
+        <li><a href="#">
+                <h4 class="type-velo">Горные/городские</h4>
+            </a></li>
+        <li><a href="#">
+                <h4 class="type-velo">Городские эконом</h4>
+            </a></li>
     </ul>
     <hr>
-    <p>© BikePark, 2022</p>
-    <a href="#">Политика конфиденциальности</a>
+    <p>
+    <h3 class="footer-info">© BikePark, 2022</h3>
+    </p>
+    <a href="#">
+        <h3 class="footer-info">Политика конфиденциальности</h3>
+    </a>
 
     <ul>
         <il>
