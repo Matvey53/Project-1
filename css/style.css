@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Montserrat SemiBold';
-    src: url('..assets/fonts/Montserrat-SemiBold.woff2') format('woff2'),
-        url('..assets/fonts/Montserrat-SemiBold.woff') format('woff');
+    src: url('/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('/fonts/Montserrat-SemiBold.woff') format('woff');
     font-style: normal;
     font-weight: 600;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Montserrat Medium';
-    src: url('..assets/fonts/Montserrat-Medium.woff2') format('woff2'),
-        url('..assets/fonts/Montserrat-Medium.woff') format('woff');
+    src: url('/fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('/fonts/Montserrat-Medium.woff') format('woff');
     font-style: normal;
     font-weight: 500;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Montserrat Bold';
-    src: url('..assets/fonts/Montserrat-Bold.woff2') format('woff2'),
-        url('..assets/fonts/Montserrat-Bold.woff') format('woff');
+    src: url('/fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('/fonts/Montserrat-Bold.woff') format('woff');
     font-style: normal;
     font-weight: 700;
     font-display: swap;
@@ -27,7 +27,7 @@
 
 
 :root {
-    --text-color: #111111;
+    --text-color: #14233D;
     --primery-color: #3E80F7;
     --ui-color: #297FFF;
     --bg-color: #ffffff;
@@ -65,6 +65,42 @@ figure {
 }
 
 
+.caret {
+    position: relative;
+    display: block;
+    width: 6.6px;
+    height: 1px;
+    margin-left: 2px;
+    margin-top: -2px;
+}
+
+.caret::before,
+.caret::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 5px;
+    height: 100%;
+    background-color: #888888;
+}
+
+.caret::before {
+    left: 0;
+    transform-origin: left center;
+    transform: rotate(45deg);
+}
+
+.caret::after {
+    right: 0;
+    transform-origin: right center;
+    transform: rotate(-45deg);
+}
+
+.h4 {
+    color: #14233D;
+}
+
 .h3 {
     font-family: "Montserrat Medium", Arial, sans-serif;
     font-size: 1.125rem;
@@ -96,10 +132,11 @@ figure {
 
 
 .container {
-    max-width: 1058px;
+    max-width: 1200px;
     width: 100%;
     padding: 0 20px;
     margin: 0 auto;
+
 }
 
 
@@ -109,6 +146,7 @@ figure {
 .header__row {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 10px 0;
 }
 
@@ -127,6 +165,15 @@ figure {
 .nav {}
 
 .nav__menu {}
+
+.nav__menu li {
+    display: inline-block;
+}
+
+.nav__menu li a {
+    display: inline-block;
+}
+
 
 .menu__item {}
 
@@ -188,13 +235,35 @@ figure {
     margin-left: 30px;
 }
 
-.btn {}
+.btn {
+    display: inline-block;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 31px 11px;
+    gap: 10px;
+    width: 143px;
+    height: 40px;
+    left: 1210px;
+    top: 20px;
+    color: #ffffff;
+    background: #297FFF;
+    border-radius: 10px;
+}
 
-.change-language {}
+.change-language {
+    position: relative;
+}
 
-.change-language__open {}
+.change-language__open {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    font-size: 0.75rem;
+}
 
-.caret {}
 
 .header__language {
     margin-left: 24px;
