@@ -5,102 +5,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\style.css">
     <title>BikePark</title>
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="css\normalize.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css\style.css">
 </head>
 
 <body>
     <header class="header" id="header">
-        <div class="header__row">
-            <a href="" class="header__logo logo" href="">
-                <img src="Project-1\assets\icons\Group 150.svg" alt="Логотип компании BikePark" width="66">
-            </a>
-        </div>
-        <nav class="header__navigation nav">
-            <ul class="nav__menu">
-                <li class="menu__item">
-                    <a href="" class="menu__link">
-                        <h4>О нас</h4>
-                    </a>
-                </li>
-                <li class="submenu__item">
-                    <a href="#" class="submenu__link">
-                        <h4 class="rent">Аренда</h4>
-                    </a>
-                </li>
-                <li class="submenu__item">
-                    <a href="#" class="submenu__link">
-                        <h4>Доставка</h4>
-                    </a>
-                </li>
-                <li class="submenu__item">
-                    <a href="#" class="submenu__link">
-                        <h4>Где кататься</h4>
-                    </a>
-                </li>
-                <li class="submenu__item">
-                    <a href="#" class="submenu__link">
-                        <h4>Контакты</h4>
-                    </a>
-                </li>
-                <p>
-                <div class="header__contacts">
-                    <a href="tel:+971525634064">
-                        <h4 class="number">+971 52 563 4064</h4>
-                    </a>
-                </div>
-                </p>
-                <p>
-                <div class="header__row">
-                    <a href="" class="header__icon icon" href="">
-                        <img src="Project-1\assets\icons\Group 268.svg" alt="Личный Кабинет" width="40">
-                    </a>
-                </div>
-                </p>
-                <p>
-                    <button class="header__call btn" type="button">FEEDBACK</button>
-                </p>
-                <time datetime="09:00">9:00 PM</time><br>
-                <h5>Time in Dubai</h5>
-                <div class="change-language">
-                    <button class="change-language__open" type="button">RU<span class="caret"></span></button>
-                    <ul class="header__language language">
-                        <li><a class="language__link" href="#">UK</a></li>
-                        <li><a class="language__link" href="#">UZ</a></li>
-                        <li><a class="language__link" href="#">FR</a></li>
+        <div class="container">
+            <div class="header__row">
+                <a href="" class="header__logo logo" href="/">
+                    <img src="assets\icons\Group 150.svg" alt="Логотип компании BikePark" width="66">
+                </a>
+
+                <nav class="header__navigation nav">
+                    <ul class="nav__menu menu list-reset">
+                        <li class="menu__item">
+                            <a href="" class="menu__link">
+                                <h4>О нас</h4>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link_active">
+                                <h4 class="rent">Аренда</h4>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                <h4>Доставка</h4>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                <h4>Где кататься</h4>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">
+                                <h4>Контакты</h4>
+                            </a>
+                        </li>
+                        <p>
+                        <div class="header__contacts">
+                            <a href="tel:+971525634064">
+                                <h4 class="number">+971 52 563 4064</h4>
+                            </a>
+                        </div>
+
+                        <button class="header__account btn" type="button"><img src="assets\icons\Group 268.svg"
+                                alt="Личный Кабинет" width="40"> </button>
+
+                        <button class="header__call btn" type="button">FEEDBACK</button>
+
+                        <time class="header__time" datetime="09:00">9:00 PM</time>
+                        <h5>Time in Dubai</h5>
+                        <div class="header__language change-language">
+                            <button class="change-language__open" type="button">RU<span class="caret"></span></button>
+                            <ul class="language">
+                                <li><a class="language__link" href="#">UK</a></li>
+                                <li><a class="language__link" href="#">UZ</a></li>
+                                <li><a class="language__link" href="#">FR</a></li>
+                            </ul>
+                        </div>
                     </ul>
-                </div>
-            </ul>
-        </nav>
+                </nav>
+            </div>
+        </div>
     </header>
     <main>
         <section>
-            <div>
+            <div class="row">
                 <h1 class="h1"> Аренда велосипедов
                     c доставкой</h1>
             </div>
-            <div>
-                <article>
-                    <h3 class="access-velo">Шлем</h3>
-                    <p>
-                    <h3 class="access-price">Бесплатно</h3>
-                    </p>
-                    <figure><img src="assets\img\Frame 21.jpg" alt="Шлем"></figure>
-                </article>
-                <article>
-                    <h3 class="access-velo">Фонарик</h3>
-                    <p>
-                    <h3 class="access-price">Бесплатно</h3>
-                    </p>
-                    <figure><img src="assets\img\Frame 20.jpg" alt="Фонарик"></figure>
-                </article>
-                <article>
-                    <h3 class="access-velo">Замок</h3>
-                    <p>
-                    <h3 class="access-price">Бесплатно</h3>
-                    </p>
-                    <figure><img src="assets\img\Frame 19.jpg" alt="Замок"></figure>
-                </article>
+            <div class="col">
+                <div class="first-screen__cards">
+                    <article>
+                        <h3 class="access-velo">Шлем</h3>
+                        <p>
+                        <h3 class="access-price">Бесплатно</h3>
+                        </p>
+                        <figure><img src="assets\img\Frame 21.jpg" alt="Шлем"></figure>
+                    </article>
+                    <article>
+                        <h3 class="access-velo">Фонарик</h3>
+                        <p>
+                        <h3 class="access-price">Бесплатно</h3>
+                        </p>
+                        <figure><img src="assets\img\Frame 20.jpg" alt="Фонарик"></figure>
+                    </article>
+                    <article>
+                        <h3 class="access-velo">Замок</h3>
+                        <p>
+                        <h3 class="access-price">Бесплатно</h3>
+                        </p>
+                        <figure><img src="assets\img\Frame 19.jpg" alt="Замок"></figure>
+                    </article>
+                </div>
             </div>
         </section>
         <section>
@@ -259,7 +264,5 @@
 </footer>
 
 
-
-d
 
 </html>
