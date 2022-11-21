@@ -15,6 +15,10 @@
 </head>
 
 <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
     <header class="header" id="header">
         <div class="container">
             <div class="header__row">
@@ -49,30 +53,39 @@
                                 <h4>Контакты</h4>
                             </a>
                         </li>
-                        <p>
-                        <div class="header__contacts">
-                            <a href="tel:+971525634064">
-                                <h4 class="number">+971 52 563 4064</h4>
-                            </a>
-                        </div>
-
-                        <button class="header__account" type="button"><img src="assets\icons\Group 268.svg"
-                                alt="Личный Кабинет" width="40"> </button>
-
-                        <button class="header__call btn" type="button">FEEDBACK</button>
-
-                        <time class="header__time" datetime="09:00">9:00 PM</time>
-                        <h5>Time in Dubai</h5>
-                        <div class="header__language change-language">
-                            <button class="change-language__open" type="button">RU<span class="caret"></span></button>
-                            <ul class="language">
-                                <li><a class="language__link" href="#">UK</a></li>
-                                <li><a class="language__link" href="#">UZ</a></li>
-                                <li><a class="language__link" href="#">FR</a></li>
-                            </ul>
-                        </div>
                     </ul>
                 </nav>
+
+                <div class="header__contacts">
+                    <a href="tel:+971525634064">
+                        <h4 class="number">+971 52 563 4064</h4>
+                    </a>
+                </div>
+
+                <button class="header__account" type="button"><img src="assets\icons\Group 268.svg" alt="Личный Кабинет"
+                        width="40"> </button>
+
+                <button class="header__call btn" type="button">FEEDBACK</button>
+
+
+
+                <div class="header__time">
+                    <time datetime="09:00">9:00 PM</time>
+                    <h5 class="text__time h5">Time in Dubai</h5>
+                </div>
+
+
+
+
+
+                <div class="header__language change-language">
+                    <button class="change-language__open" type="button">RU<span class="caret"></span></button>
+                    <ul class="language">
+                        <li><a class="language__link" href="#">UK</a></li>
+                        <li><a class="language__link" href="#">UZ</a></li>
+                        <li><a class="language__link" href="#">FR</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
