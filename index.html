@@ -90,111 +90,111 @@
         </div>
     </header>
     <main>
-        <section>
-            <div class="row">
-                <h1 class="h1"> Аренда велосипедов
-                    c доставкой</h1>
+        <section class="first-screen section">
+            <div class="container">
+                <div class="row">
+                    <h1 class="first-screen__title h1"> Аренда велосипедов
+                        c доставкой</h1>
+
+                    <div class="first-screen__cards">
+                        <article class="service-card">
+                            <figure class="service-card__img"><img src="assets\img\Frame 21.jpg" alt="Шлем"></figure>
+                            <h3 class="service-card__access h3">Шлем</h3>
+                            <p class="service-card__price ">Бесплатно</p>
+                        </article>
+                        <article class="service-card">
+                            <figure class="service-card__img"><img src="assets\img\Frame 20.jpg" alt="Фонарик"></figure>
+                            <h3 class="service-card__access h3">Фонарик</h3>
+                            <p class="service-card__price ">Бесплатно</p>
+                        </article>
+                        <article class="service-card">
+                            <figure class="service-card__img"><img src="assets\img\Frame 19.jpg" alt="Замок"></figure>
+                            <h3 class="service-card__access h3">Замок</h3>
+                            <p class="service-card__price ">Бесплатно</p>
+                        </article>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <div class="first-screen__cards">
-                    <article>
-                        <h3 class="access-velo h3">Шлем</h3>
-                        <p>
-                        <h3 class="access-price h3">Бесплатно</h3>
-                        </p>
-                        <figure><img src="assets\img\Frame 21.jpg" alt="Шлем"></figure>
-                    </article>
-                    <article>
-                        <h3 class="access-velo h3">Фонарик</h3>
-                        <p>
-                        <h3 class="access-price h3">Бесплатно</h3>
-                        </p>
-                        <figure><img src="assets\img\Frame 20.jpg" alt="Фонарик"></figure>
-                    </article>
-                    <article>
-                        <h3 class="access-velo h3">Замок</h3>
-                        <p>
-                        <h3 class="access-price h3">Бесплатно</h3>
-                        </p>
-                        <figure><img src="assets\img\Frame 19.jpg" alt="Замок"></figure>
-                    </article>
+            <div class="container">
+                <div class="rent-velo">
+                    <ul class="time-rent ">
+                        <li class="time-rent__item ">
+                            <h4 class="hover-text h4">Тип аренды</h4>
+                        </li>
+                        <ul class="time-rent__type">
+                            <li class="time-rent__item">
+                                <button class="time-rent__btn" type="button">
+                                    <h3 class="h3"> По дням</h3>
+                                </button>
+                            </li>
+                            <li class="time-rent__item">
+                                <button class="time-rent__btn " type="button">
+                                    <h3 class="h3"> 2 часа </h3>
+                                </button>
+                            </li>
+                        </ul>
+                        <li class="time-rent__item ">
+                            <h4 class="hover-text h4">Дата и время начала</h4>
+                        </li>
+                        <input type="datetime-local" id="localdate" name="date" />
+                        <li class="time-rent__item">
+                            <h4 class="hover-text h4">Дата и время конца</h4>
+                        </li>
+                        <input type="datetime-local" id="localdate" name="date" />
+                        <li class="time-rent__item">
+                            <h4 class="hover-text h4">Доставка</h4>
+                        </li>
+                        <button class="change-adress" type="button">По адресу <span class="caret"></span></button>
+                    </ul>
                 </div>
             </div>
         </section>
-        <section>
-            <ul class="time-rent">
-                <li>
-                    <h4 class="time-rent h4">Тип аренды</h4>
-                </li>
-                <ul>
-                    <li><button class="time-rent " type="button">
-                            <h3 class="h3"> По дням</h3>
-                        </button></li>
-                    <li><button class="time-rent" type="button">
-                            <h3 class="h3"> 2 часа </h3>
 
-                        </button></li>
-                </ul>
-                <li>
-                    <h4 class="time-rent h4">Дата и время начала</h4>
-                </li>
-                <input type="datetime-local" id="localdate" name="date" />
-                <li>
-                    <h4 class="time-rent h4">Дата и время конца</h4>
-                </li>
-                <input type="datetime-local" id="localdate" name="date" />
-                <li>
-                    <h4 class="time-rent h4">Доставка</h4>
-                </li>
-                <button class="change-adress" type="button">По адресу <span class="caret"></span></button>
-            </ul>
-        </section>
+        <section class="first-screen__velo section">
+            <div class="container">
 
-        <section>
-            <li>
-                <h4>Тип велосипеда </h4>
-            </li>
-            <div>
-                <article class="type__velo">
-                    <img src="assets\img\image 29.jpg" alt="Велосипед">
-                    <h3 class="view__velo h3">Алюминий</h3>
-                    <p>
-                    <h3 class="price__velo h3">90 AED</h3>
-                    <a href="">?</a>
-                    <button>+</button>
-                </article>
-                <article class="type_velo">
-                    <img src="assets\img\image 29.jpg" alt="Велосипед">
-                    <h3 class="view__velo h3">Карбон</h3>
-                    <p>
-                    <h3 class="price__velo h3">180 AED</h3>
-                    <a href="">?</a>
-                    <button>+</button>
-                </article>
-                <article class="type_velo">
-                    <img src="assets\img\image 29.jpg" alt="Велосипед">
-                    <h3 class="view__velo h3">Горный/городской</h3>
-                    <p>
-                    <h3 class="price__velo h3">90 AED</h3>
-                    <a href="">?</a>
-                    <button>+</button>
-                </article>
-                <article class="type_velo">
-                    <img src="assets\img\image 29.jpg" alt="Велосипед">
-                    <h3 class="view__velo h3">Городской эконом</h3>
-                    <p>
-                    <h3 class="price__velo h3">45 AED</h3>
-                    <a href="">?</a>
-                    <button>+</button>
-                </article>
+                <h4 class="hover-text h4">Тип велосипеда </h4>
+                <div class="row">
+                    <article class="type-velo">
+                        <img src="assets\img\image 29.jpg" alt="Велосипед">
+                        <h3 class="view-velo h3">Алюминий</h3>
+                        <p>
+                        <h3 class="price-velo h3">90 AED</h3>
+                        <a href="">?</a>
+                        <button>+</button>
+                    </article>
+                    <article class="type-velo">
+                        <img src="assets\img\image 29.jpg" alt="Велосипед">
+                        <h3 class="view-velo h3">Карбон</h3>
+                        <p>
+                        <h3 class="price-velo h3">180 AED</h3>
+                        <a href="">?</a>
+                        <button>+</button>
+                    </article>
+                    <article class="type-velo">
+                        <img src="assets\img\image 29.jpg" alt="Велосипед">
+                        <h3 class="view-velo h3">Горный/городской</h3>
+                        <p>
+                        <h3 class="price-velo h3">90 AED</h3>
+                        <a href="">?</a>
+                        <button>+</button>
+                    </article>
+                    <article class="type-velo">
+                        <img src="assets\img\image 29.jpg" alt="Велосипед">
+                        <h3 class="view-velo h3">Городской эконом</h3>
+                        <p>
+                        <h3 class="price-velo h3">45 AED</h3>
+                        <a href="">?</a>
+                        <button>+</button>
+                    </article>
+                </div>
+                <p>
+                <h4 class="info-velo hover-text h4">Легкие, надежные и легко управляются.
+                    Возможны вибрации
+                    из-за неровностей дороги.</h4>
+                </p>
+                <a class="find-velo btn btn_find" href="#">Найти</a>
             </div>
-            <p>
-            <h4 class="info__velo h4">Легкие, надежные и легко управляются.
-                Возможны вибрации
-                из-за неровностей дороги.</h4>
-            </p>
-            <button class="find-velo" type="button">Найти</button>
-
 
         </section>
 

@@ -3,7 +3,8 @@
     --primery-color: #3E80F7;
     --ui-color: #297FFF;
     --bg-color: #ffffff;
-    --section-color: #DAF1F9;
+    --section-color: #F2F4F7;
+    --text-color-hover: #ABB1C5;
 }
 
 
@@ -75,7 +76,7 @@ figure {
 
 .h4 {
     font-family: "Montserrat ", sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
     line-height: 120%;
     color: var(--text-color);
 }
@@ -96,7 +97,7 @@ figure {
 
 .h1 {
     font-family: "Montserrat ", sans-serif;
-    font-size: 3.125rem;
+    font-size: 3rem;
     line-height: 120%;
     color: var(--text-color);
 }
@@ -110,11 +111,8 @@ figure {
 }
 
 .row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
+    display: inline-flex;
 }
-
 
 
 
@@ -124,11 +122,8 @@ figure {
 .container {
     max-width: 100%;
     width: 100%;
-    padding: 0 20px;
+    padding: 0;
     margin: 0 auto;
-
-
-
 }
 
 .col {}
@@ -140,6 +135,7 @@ figure {
     align-items: center;
     justify-content: center;
     padding: 0;
+
 }
 
 .header__logo {
@@ -150,8 +146,6 @@ figure {
     margin-left: 34px;
     position: relative;
 }
-
-
 
 
 .nav {}
@@ -272,6 +266,12 @@ p {
     border-radius: 10px;
 }
 
+.btn_find {
+    width: 260px;
+    height: 60px;
+    padding: 21px 96px;
+}
+
 .change-language {
     position: relative;
 
@@ -302,3 +302,103 @@ p {
 }
 
 .language__link {}
+
+.section {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+.section__title {
+    margin-top: 0;
+    margin-bottom: 67px;
+    text-align: center;
+}
+
+.first-screen__title {
+    max-width: 549px;
+    width: 100%;
+    margin-top: 56px;
+    margin-bottom: 67px;
+}
+
+.first-screen {
+    max-width: 1240px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    background-color: var(--section-color);
+
+}
+
+.first-screen__cards {
+    display: inline-flex;
+}
+
+.rent-velo {
+    display: inline-block;
+}
+
+.service-card {
+    position: relative;
+    width: 316px;
+    height: 210px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #D7E6FF;
+    overflow: hidden;
+}
+
+.service-card__access {}
+
+
+.service-card__price {
+    color: #297FFF;
+}
+
+.service-card__img {}
+
+.rent-velo {}
+
+.hover-text {
+    color: var(--text-color-hover);
+}
+
+.time-rent__item {}
+
+
+.time-rent__type {}
+
+.time-rent__btn {}
+
+.first-screen__velo {
+    max-width: 1240px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--section-color);
+}
+
+.type-velo {
+    padding: 40px;
+    align-items: center;
+
+}
+
+.view-velo {}
+
+.price-velo {}
+
+.info-velo {
+    max-width: 211px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 42px;
+}
+
+.find-velo {
+    align-items: center;
+    justify-content: center;
+
+}
