@@ -111,7 +111,9 @@ figure {
 }
 
 .row {
-    display: inline-flex;
+
+    border-radius: 20px;
+    padding: 0 0 25px 0;
 }
 
 
@@ -123,6 +125,8 @@ figure {
     max-width: 100%;
     width: 100%;
     padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
     margin: 0 auto;
 }
 
@@ -187,6 +191,14 @@ figure {
     justify-content: center;
     align-items: center;
 
+}
+
+
+.filter-head {
+    display: flex;
+    align-items: center;
+    margin: -40px -40px 20px 0;
+    justify-content: space-between;
 }
 
 .header__time h5 {
@@ -287,6 +299,13 @@ p {
 }
 
 
+
+.filter-head__gift {
+    margin-left: 5px;
+}
+
+
+
 .header__language {
     margin-left: 24px;
 
@@ -349,6 +368,23 @@ p {
     background-color: #D7E6FF;
     overflow: hidden;
 }
+
+
+
+.card-item__1 {
+    background: url('/assets/icons/Rectangle 555.svg') no-repeat 0 0;
+}
+
+
+.card-item__2 {
+    background: url('/assets/icons/Rectangle 549.svg')no-repeat 0 0;
+}
+
+
+.card-item__3 {
+    background: url('/assets/icons/Rectangle 544.svg')no-repeat 0 0;
+}
+
 
 .service-card__access {}
 
