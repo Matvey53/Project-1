@@ -111,7 +111,10 @@ figure {
 }
 
 .row {
-
+    display: flex;
+    align-items: center;
+    margin: 0px -40px 20px 0;
+    justify-content: space-between;
     border-radius: 20px;
     padding: 0 0 25px 0;
 }
@@ -122,11 +125,10 @@ figure {
 
 
 .container {
-    max-width: 100%;
+    position: relative;
+    max-width: 1200px;
     width: 100%;
-    padding: 0;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -135,24 +137,26 @@ figure {
 
 .header__row {
     display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
 
+    align-items: center;
+
+    padding: 0;
+    width: auto;
 }
 
 .header__logo {
     flex-shrink: 0;
+
 }
 
 .header__navigation {
-    margin-left: 34px;
-    position: relative;
+    margin-left: auto;
 }
 
 
-.nav {}
+.nav {
+    position: relative;
+}
 
 .nav__menu {}
 
@@ -195,10 +199,7 @@ figure {
 
 
 .filter-head {
-    display: flex;
     align-items: center;
-    margin: -40px -40px 20px 0;
-    justify-content: space-between;
 }
 
 .header__time h5 {
@@ -225,8 +226,18 @@ figure {
 .menu__link {
     display: flex;
     align-items: center;
-    padding: 20px;
+    margin-left: 20px;
 
+
+
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 54px;
 }
 
 .header__contacts a {
@@ -300,9 +311,7 @@ p {
 
 
 
-.filter-head__gift {
-    margin-left: 5px;
-}
+.filter-head__gift {}
 
 
 
@@ -336,14 +345,15 @@ p {
 
 .first-screen__title {
     max-width: 549px;
+    max-height: 161px;
     width: 100%;
     margin-top: 56px;
     margin-bottom: 67px;
+
 }
 
 .first-screen {
-    max-width: 1240px;
-    margin: 0 auto;
+
     justify-content: center;
     align-items: center;
     padding-top: 40px;
@@ -353,11 +363,12 @@ p {
 
 .first-screen__cards {
     display: inline-flex;
+    max-width: 691px;
+    width: 100%;
+
 }
 
-.rent-velo {
-    display: inline-block;
-}
+
 
 .service-card {
     position: relative;
@@ -367,35 +378,97 @@ p {
     border-radius: 10px;
     background-color: #D7E6FF;
     overflow: hidden;
+
+
+
 }
 
 
 
 .card-item__1 {
     background: url('/assets/icons/Rectangle 555.svg') no-repeat 0 0;
+    margin-left: -5px;
+    margin-right: -106px;
+    padding: 33px 44px 53px 45px;
+
+
 }
 
 
 .card-item__2 {
     background: url('/assets/icons/Rectangle 549.svg')no-repeat 0 0;
+    margin-right: -110px;
+    padding: 33px 30px 53px 70px;
 }
 
 
 .card-item__3 {
     background: url('/assets/icons/Rectangle 544.svg')no-repeat 0 0;
+    margin-right: 0;
+    padding: 33px 0 0 60px;
+
 }
 
 
-.service-card__access {}
+.service-card__access1 {
+    margin-top: -11px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+
+}
 
 
-.service-card__price {
+.service-card__access2 {
+    margin-top: -4px;
+    margin-left: -26px;
+    margin-bottom: 5px;
+}
+
+.service-card__access3 {
+    margin-top: -4px;
+    margin-left: -25px;
+    margin-bottom: 5px;
+}
+
+
+.service-card__price1 {
     color: #297FFF;
+    margin-top: 0px;
+    margin-bottom: 19px;
+
 }
 
-.service-card__img {}
+.service-card__price2 {
+    color: #297FFF;
+    margin-top: 0px;
+    margin-bottom: 19px;
+    margin-left: -25px;
+}
+
+.service-card__price3 {
+    color: #297FFF;
+    margin-top: 0px;
+    margin-bottom: 19px;
+    margin-left: -25px;
+}
+
+
+
+.service-card__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
 
 .rent-velo {}
+
+.rent-velo__parametrs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+
 
 .hover-text {
     color: var(--text-color-hover);
@@ -437,4 +510,74 @@ p {
     align-items: center;
     justify-content: center;
 
+}
+
+
+
+.parametrs-item__btn {
+    display: flex;
+    flex-wrap: wrap;
+    width: 260px;
+    border: 1px solid #337AB7;
+
+}
+
+.parametrs-item__btn button {
+    flex-grow: 1;
+    cursor: pointer;
+    color: #ffffff;
+    background: #297FFF;
+    border-radius: 10px;
+    color: #337AB7;
+    background-color: #FFF;
+    transition: flex-grow 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    margin-top: 0;
+    bottom: 0;
+
+    left: 0;
+    width: 100%;
+    background: #272934;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 75px;
+    color: #F2F4F7;
 }
