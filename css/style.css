@@ -128,6 +128,7 @@ figure {
     font-size: 3rem;
     line-height: 120%;
     color: var(--text-color);
+    font-weight: 600;
 }
 
 
@@ -393,7 +394,11 @@ p {
 .btn_find {
     width: 260px;
     height: 60px;
-    padding: 21px 96px;
+    padding: 18px 96px 25px 96px;
+    font-family: "Montserrat-Bold", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.250rem;
+    line-height: 120%;
 }
 
 .change-language {
@@ -734,9 +739,11 @@ p {
 }
 
 .type-velo__info {
+    width: 32px;
+    height: 32px;
     border: 1px solid #DDE3EB;
     border-radius: 10px;
-    padding: 11px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
     display: block;
     transition: 0.4s;
     cursor: pointer;
@@ -821,55 +828,41 @@ p {
 }
 
 
-.custom-checkbox1,
-.custom-checkbox2,
-.custom-checkbox3,
-.custom-checkbox4 {
+.custom-checkbox {
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
 
-.custom-checkbox1+label,
-.custom-checkbox2+label,
-.custom-checkbox3+label,
-.custom-checkbox4+label {
+.custom-checkbox+label {
     display: inline-flex;
     align-items: center;
     user-select: none;
 }
 
-.custom-checkbox1+label::before,
-.custom-checkbox2+label::before,
-.custom-checkbox3+label::before,
-.custom-checkbox4+label::before {
-    content: url('..//assets/icons/Plus.svg');
+.custom-checkbox+label::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-image: url('..//assets/icons/Plus.svg');
     background-repeat: no-repeat;
     background-position: center center;
     border: 1px solid #DDE3EB;
     border-radius: 10px;
     padding: 11px 10px 10px 10px;
     display: block;
-    transition: 0.4s;
+    transition: 0.2s;
     cursor: pointer;
 }
 
-.custom-checkbox1:checked+label::before,
-.custom-checkbox2:checked+label::before,
-.custom-checkbox3:checked+label::before,
-.custom-checkbox4:checked+label::before {
-
+.custom-checkbox:checked+label::before {
+    width: 32px;
+    height: 32px;
     border-color: var(--ui-color);
     background-color: var(--ui-color);
     background-image: url("../assets/icons/Vector 13.svg");
-    ;
+
 }
-
-
-
-
-
-
 
 
 
