@@ -12,6 +12,42 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css\style.css">
+
+    <script src="js\main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            ItcCustomSelect.create('#select-1', {
+                name: 'City',
+                targetValue: 'Москва',
+                options: [
+                    ['москва', 'Москва'],
+                    ['ступино', 'Ступино'],
+                    ['кашира', 'Кашира'],
+                    ['озера', 'Озера']
+                ],
+                onSelected(select, option) {
+                    // выбранное значение
+                    console.log(`Выбранное значение: ${select.value}`);
+                    // индекс выбранной опции
+                    console.log(`Индекс выбранной опции: ${select.selectedIndex}`);
+                    // выбранный текст опции
+                    const text = option ? option.textContent : '';
+                    console.log(`Выбранный текст опции: ${text}`);
+                },
+            });
+            document.querySelector('.itc-select').addEventListener('itc.select.change', (e) => {
+                const btn = e.target.querySelector('.itc-select__toggle');
+                // выбранное значение
+                console.log(`Выбранное значение: ${btn.value}`);
+                // индекс выбранной опции
+                console.log(`Индекс выбранной опции: ${btn.dataset.index}`);
+                // выбранный текст опции
+                const selected = e.target.querySelector('.itc-select__option_selected');
+                const text = selected ? selected.textContent : '';
+                console.log(`Выбранный текст опции: ${text}`);
+            });
+        })
+    </script>
 </head>
 
 <body>
@@ -126,48 +162,56 @@
                 <div class="rent-velo">
                     <div class="rent-velo__parameters">
                         <div class="parameters-item">
-                            <div class="rent-velo__type parameters-item">
-                                <div class="parameters-item__title ">Тип аренды</div>
-                                <div class="parameters-item__btn">
-                                    <button class="">По дням </button>
-                                    <button class="">2 часа</button>
+
+                            <div class="parameters-item__title ">Тип аренды</div>
+                            <div class="parameters-item__btn">
+                                <div class="switch-button">
+                                    <input class="switch-button-checkbox" type="checkbox"></input>
+                                    <label class="switch-button-label" for=""><span class="switch-button-label-span">
+                                            По дням</span></label>
+                                </div>
+                            </div>
+                            <script>
+                                window.console = window.console || function (t) { };
+                            </script>
+
+                            <script>
+                                if (document.location.search.match(/type=embed/gi)) {
+                                    window.parent.postMessage("resize", "*");
+                                }
+                            </script>
+                        </div>
+
+
+
+                        <div class="parameters-item parameters-item__date" id="two-inputs">
+                            <div class="parameters-item__time">
+                                <div class="parameters-item__title ">Дата и время начала </div>
+                                <div class="parameters-item__range">
+                                    <input type="datetime-local" class="datetime-local" value="2022-12-10T12:00:00" />
+                                </div>
+                            </div>
+
+                            <div class="tire">—</div>
+
+                            <div class="parameters-item__time">
+                                <div class="parameters-item__title ">Дата и время конца</div>
+                                <div class="parameters-item__range">
+                                    <input type="datetime-local" class="datetime-local" value="2022-12-10T12:00:00" />
                                 </div>
                             </div>
                         </div>
 
-                        <div class="rent-velo__time parameters-item">
-                            <div class="parameters-item parameters-item_date" id="two-inputs">
-                                <div class="parameters-item__data">
-                                    <div class="parameters-item__title ">Дата и время начала </div>
-                                    <div class="parameters-item__range">
-                                        <input id="date-range200" name="data_start" type="text" class="date-range"
-                                            size="20" readonly="" value="24.07.21  12:00">
-                                    </div>
-                                </div>
-
-                                <div class="tire">—</div>
-
-                                <div class="parameters-item__data">
-                                    <div class="parameters-item__title ">Дата и время конца</div>
-                                    <div class="parameters-item__range">
-                                        <input id="date-range201" name="data_end" type="text" class="date-range"
-                                            size="20" readonly="" value="25.07.21  12:00">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="parameters-item rent-velo__delivery">
                             <div class="parameters-item__title ">Доставка</div>
-                            <button class="change-adress" type="button">По адресу <span class="caret"></span></button>
-                            <ul class="choose-adress">
-                                <li><a class="adress__link" href="#">Москва</a></li>
-                                <li><a class="adress__link" href="#">Ступино</a></li>
-                                <li><a class="adress__link" href="#">Кашира</a></li>
-                            </ul>
+
+                            <div id="select-1"></div>
                         </div>
                     </div>
+
                 </div>
+            </div>
         </section>
 
         <section class="first-screen__velo section">
@@ -234,7 +278,7 @@
                                         </svg>
                                     </a>
                                 </div>
-                                <div class="form__checkbox-add">
+                                <div class="form__checkbox-add__3">
                                     <input type="checkbox" name="add-velo__3" class="custom-checkbox" value="Добавить"
                                         id="add-velo__3">
                                     <label for="add-velo__3"></label>
@@ -262,7 +306,7 @@
 
 
 
-                                <div class="form__checkbox-add">
+                                <div class="form__checkbox-add__4">
                                     <input type="checkbox" name="add-velo__4" class="custom-checkbox" value="Добавить"
                                         id="add-velo__4">
                                     <label for="add-velo__4"></label>
@@ -290,6 +334,10 @@
             </div>
 
         </section>
+
+
+
+
 
     </main>
 
