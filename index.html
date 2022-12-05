@@ -17,13 +17,11 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             ItcCustomSelect.create('#select-1', {
-                name: 'City',
-                targetValue: 'Москва',
+                name: 'adress',
+                targetValue: 'По адресу',
                 options: [
-                    ['москва', 'Москва'],
-                    ['ступино', 'Ступино'],
-                    ['кашира', 'Кашира'],
-                    ['озера', 'Озера']
+                    ['по адресу', 'По адресу'],
+                    ['самовывоз', 'Самовывоз'],
                 ],
                 onSelected(select, option) {
                     // выбранное значение
@@ -48,6 +46,7 @@
             });
         })
     </script>
+
 </head>
 
 <body>
@@ -97,7 +96,7 @@
                 <button class="header__account" type="button"><img src="assets\icons\Group 268.svg" alt="Личный Кабинет"
                         width="40"> </button>
 
-                <button class="header__call btn" type="button">FEEDBACK</button>
+                <button class="header__call btn" type="button" id="call-request">FEEDBACK</button>
 
 
 
@@ -124,93 +123,100 @@
     <main>
         <section class="first-screen section">
             <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="filter-head">
-                            <h1 class="first-screen__title h1"> Аренда велосипедов
-                                c доставкой</h1>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="filter-head__gift">
-                            <div class="first-screen__cards">
-
-                                <article class="service-card card-item__1">
-                                    <figure class="service-card__img"><img src="assets\img\image 12.png" alt="Шлем">
-                                    </figure>
-                                    <h3 class="service-card__access1 h3">Шлем</h3>
-                                    <p class="service-card__price1 ">Бесплатно</p>
-                                </article>
-                                <article class="service-card card-item__2">
-                                    <figure class="service-card__img"><img src="assets\img\image 13.png" alt="Фонарик">
-                                    </figure>
-                                    <h3 class="service-card__access2 h3">Фонарик</h3>
-                                    <p class="service-card__price2 ">Бесплатно</p>
-                                </article>
-                                <article class="service-card card-item__3">
-                                    <figure class="service-card__img"><img src="assets\img\image 14.png" alt="Замок">
-                                    </figure>
-                                    <h3 class="service-card__access3 h3">Замок</h3>
-                                    <p class="service-card__price3 ">Бесплатно</p>
-                                </article>
+                <div class="gray">
+                    <div class="row">
+                        <div class="col">
+                            <div class="filter-head">
+                                <h1 class="first-screen__title h1"> Аренда велосипедов
+                                    c доставкой</h1>
                             </div>
                         </div>
+                        <div class="col">
+                            <div class="filter-head__gift">
+                                <div class="first-screen__cards">
+
+                                    <article class="service-card card-item__1">
+                                        <figure class="service-card__img"><img src="assets\img\image 12.png" alt="Шлем">
+                                        </figure>
+                                        <h3 class="service-card__access1 h3">Шлем</h3>
+                                        <p class="service-card__price1 ">Бесплатно</p>
+                                    </article>
+                                    <article class="service-card card-item__2">
+                                        <figure class="service-card__img"><img src="assets\img\image 13.png"
+                                                alt="Фонарик">
+                                        </figure>
+                                        <h3 class="service-card__access2 h3">Фонарик</h3>
+                                        <p class="service-card__price2 ">Бесплатно</p>
+                                    </article>
+                                    <article class="service-card card-item__3">
+                                        <figure class="service-card__img"><img src="assets\img\image 14.png"
+                                                alt="Замок">
+                                        </figure>
+                                        <h3 class="service-card__access3 h3">Замок</h3>
+                                        <p class="service-card__price3 ">Бесплатно</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rent-velo">
+                        <div class="rent-velo__parameters">
+                            <div class="parameters-item">
+
+                                <div class="parameters-item__title ">Тип аренды</div>
+                                <div class="parameters-item__btn">
+                                    <div class="switch-button">
+                                        <input class="switch-button-checkbox" type="checkbox"></input>
+                                        <label class="switch-button-label" for=""><span
+                                                class="switch-button-label-span">
+                                                По дням</span></label>
+                                    </div>
+                                </div>
+                                <script>
+                                    window.console = window.console || function (t) { };
+                                </script>
+
+                                <script>
+                                    if (document.location.search.match(/type=embed/gi)) {
+                                        window.parent.postMessage("resize", "*");
+                                    }
+                                </script>
+                            </div>
+
+
+
+                            <div class="parameters-item parameters-item__date" id="two-inputs">
+                                <div class="parameters-item__time">
+                                    <div class="parameters-item__title ">Дата и время начала </div>
+                                    <div class="parameters-item__range">
+                                        <input type="datetime-local" class="datetime-local"
+                                            value="2022-12-10T12:00:00" />
+                                    </div>
+                                </div>
+
+                                <div class="tire">—</div>
+
+                                <div class="parameters-item__time">
+                                    <div class="parameters-item__title ">Дата и время конца</div>
+                                    <div class="parameters-item__range">
+                                        <input type="datetime-local" class="datetime-local"
+                                            value="2022-12-10T12:00:00" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="parameters-item rent-velo__delivery">
+                                <div class="parameters-item__title ">Доставка</div>
+
+                                <div id="select-1"></div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-
-                <div class="rent-velo">
-                    <div class="rent-velo__parameters">
-                        <div class="parameters-item">
-
-                            <div class="parameters-item__title ">Тип аренды</div>
-                            <div class="parameters-item__btn">
-                                <div class="switch-button">
-                                    <input class="switch-button-checkbox" type="checkbox"></input>
-                                    <label class="switch-button-label" for=""><span class="switch-button-label-span">
-                                            По дням</span></label>
-                                </div>
-                            </div>
-                            <script>
-                                window.console = window.console || function (t) { };
-                            </script>
-
-                            <script>
-                                if (document.location.search.match(/type=embed/gi)) {
-                                    window.parent.postMessage("resize", "*");
-                                }
-                            </script>
-                        </div>
-
-
-
-                        <div class="parameters-item parameters-item__date" id="two-inputs">
-                            <div class="parameters-item__time">
-                                <div class="parameters-item__title ">Дата и время начала </div>
-                                <div class="parameters-item__range">
-                                    <input type="datetime-local" class="datetime-local" value="2022-12-10T12:00:00" />
-                                </div>
-                            </div>
-
-                            <div class="tire">—</div>
-
-                            <div class="parameters-item__time">
-                                <div class="parameters-item__title ">Дата и время конца</div>
-                                <div class="parameters-item__range">
-                                    <input type="datetime-local" class="datetime-local" value="2022-12-10T12:00:00" />
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="parameters-item rent-velo__delivery">
-                            <div class="parameters-item__title ">Доставка</div>
-
-                            <div id="select-1"></div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </section>
 
@@ -315,20 +321,17 @@
                         </article>
                     </div>
                 </div>
-                <div class="type-velo__group">
-                    <div class="type-velo__text ">
-                        <div class="info-item__down">
-                            <a class="info-link " name="modal" href="#">
-                                <span class="user-link__text">Легкие, надежные и легко управляются.
-                                    Возможны вибрации
-                                    из-за неровностей дороги.</span>
-                            </a>
-                        </div>
-                    </div>
+                <div class="type-velo__window">
 
+                    <article class="type-velo-info">
+                        <p class="type-velo__text">Легкие, надежные и легко управляются.
+                            Возможны вибрации
+                            из-за неровностей дороги.</p>
+                    </article>
                     <div class="type-velo__find">
                         <a class="find-velo btn btn_find" href="#">Найти</a>
                     </div>
+
                 </div>
 
             </div>
@@ -343,9 +346,8 @@
 
 
 
-</body>
 
-<footer>
+
 
 
     <footer class="footer">
@@ -360,8 +362,10 @@
                         <ul class="arend-menu">
                             <li class="arend-menu__li"><a href="#" class="arend-menu__link">Алюминий</a></li>
                             <li class="arend-menu__li"><a href="#" class="arend-menu__link">Карбон</a></li>
-                            <li class="arend-menu__li"><a href="#" class="arend-menu__link">Горные/городские</a></li>
-                            <li class="arend-menu__li"><a href="#" class="arend-menu__link">Городские эконом</a></li>
+                            <li class="arend-menu__li"><a href="#" class="arend-menu__link">Горные/городские</a>
+                            </li>
+                            <li class="arend-menu__li"><a href="#" class="arend-menu__link">Городские эконом</a>
+                            </li>
                         </ul>
                     </div>
 
@@ -421,7 +425,36 @@
     </footer>
 
 
+    <div class="dialog" id="call-request-dialog">
+        <div class="dialog__overlay" id="call-request-overlay"></div>
+        <div class="dialog__content">
+            <button class="dialog__close" id="call-request-close">
+                <span></span>
+            </button>
+
+            <h3 class="dialog__title h3">Есть вопросы? Оставьте номер, и мы всё обсудим</h3>
+
+            <form class="form" action="">
+                <fieldset class="form__group">
+                    <legend class="form__legend">Имя*</legend>
+                    <input class="form__input" type="text" name="name" placeholder="Имя">
+                </fieldset>
+                <fieldset class="form__group">
+                    <legend class="form__legend">Номер телефона*</legend>
+                    <input class="form__input" type="tel" name="phone" placeholder="Телефон">
+                </fieldset>
+                <fieldset class="form__group">
+                    <div class="form__checkbox">
+                        <input type="checkbox" name="accept" value="Согласие на обработку данных" id="accept-data">
+                        <label for="pineapple">Согласие на обработку персональных данных</label>
+                    </div>
+                </fieldset>
+                <button class="form__submit btn" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
 
 
+</body>
 
 </html>
