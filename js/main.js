@@ -160,12 +160,6 @@ ItcCustomSelect.hideOpenSelect();
 
 
 
-
-
-
-
-
-
 const callRequestDialog = document.querySelector('#call-request-dialog');
 const callRequestBtn = document.querySelector('#call-request');
 const callRequestClose = callRequestDialog.querySelector('#call-request-close');

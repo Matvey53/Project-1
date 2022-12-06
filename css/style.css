@@ -3,7 +3,7 @@
     --primery-color: #3E80F7;
     --ui-color: #297FFF;
     --bg-color: #ffffff;
-    --section-color: #F2F4F7;
+    --section-color: #ffff;
     --text-color-hover: #ABB1C5;
     --hover-color-btn: #005EFF;
     --border-color: #b8c0cf;
@@ -222,6 +222,11 @@ figure {
     justify-content: center;
     align-items: center;
     max-height: 46px;
+}
+
+.time-adapt {
+    display: inline;
+    margin: 0;
 }
 
 .filter-head {
@@ -485,6 +490,7 @@ p {
 }
 
 .service-card__price1 {
+    cursor: pointer;
     color: #297FFF;
     margin-top: 0px;
     margin-bottom: 15px;
@@ -494,6 +500,7 @@ p {
 }
 
 .service-card__price2 {
+    cursor: pointer;
     color: #297FFF;
     margin-top: 0px;
     margin-bottom: 19px;
@@ -503,6 +510,7 @@ p {
 }
 
 .service-card__price3 {
+    cursor: pointer;
     color: #297FFF;
     margin-top: 0px;
     margin-bottom: 19px;
@@ -512,6 +520,7 @@ p {
 }
 
 .service-card__img {
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1234,4 +1243,209 @@ input.datetime-local {
     font-weight: 500;
     font-size: 1.125rem;
     line-height: 120%;
+}
+
+
+@media (max-width:380px) {
+    .h1 {
+        font-size: 2rem;
+        line-height: 100%;
+    }
+
+    .header__logo {
+        width: 60px;
+        height: 38px;
+    }
+
+    .header__time {
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    nav {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+    }
+
+    .header__navigation {
+        display: none;
+    }
+
+    .header__contacts {
+        display: none;
+    }
+
+    .header__account {
+        display: none;
+    }
+
+    .header__call {
+        display: none;
+    }
+
+    .header__language {
+        display: none;
+    }
+
+    .menu li {
+        float: left;
+    }
+
+    .menu a:hover {
+        background-color: transparent;
+        color: var(--text-color);
+    }
+
+
+    .header__row {
+        height: 100%;
+        align-items: flex-start;
+        display: flex;
+        align-items: center;
+    }
+
+    body {
+        font-size: 1rem;
+        line-height: 120%;
+    }
+
+    .first-screen__cards {
+        max-width: 691px;
+        width: 100%;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .rent-velo__parameters {
+        flex-wrap: wrap;
+    }
+
+    .row {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .card-item__1 {
+        background: url('..//assets/icons/Rectangle 636.svg');
+        height: 89px;
+        width: 136px;
+        padding: 64px 30px 3px 13px;
+
+
+        border-radius: 15px 0 0 15px;
+
+    }
+
+    .card-item__2 {
+        background: url('..//assets/icons/Rectangle 637.svg');
+        height: 89px;
+        padding: 64px 30px 3px 13px;
+    }
+
+    .card-item__3 {
+        background: url('..//assets/icons/Rectangle 638.svg');
+        height: 89px;
+        padding: 64px 30px 3px 13px;
+    }
+}
+
+@media (max-width:768px) {
+    .h1 {
+        font-size: 2.250rem;
+        line-height: 100%;
+    }
+
+
+    .menu__link {
+        font-weight: 500;
+        font-size: 0.875rem;
+    }
+
+    .header__logo {
+        width: 60px;
+        height: 38px;
+    }
+
+    .header__contacts {
+        display: none;
+    }
+
+    .text__time {
+        display: none;
+    }
+
+    .h-time {
+        text-align: center;
+    }
+
+    .menu__item-adapt {
+        display: none;
+    }
+
+    .change-language__open {
+        display: none;
+    }
+
+    .header__time {
+        font-size: 1.125rem;
+        font-weight: 700;
+        text-align: right;
+    }
+
+    nav {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+    }
+
+    .header__navigation {
+        margin-left: 30px;
+        font-weight: 500;
+    }
+
+    .list-reset {
+        text-align: left;
+        margin-left: -20px;
+
+    }
+
+    .header__row {
+        max-width: 690px;
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .header__account {
+        margin-left: 110px;
+    }
+
+    .header__time {
+        margin-left: 20px;
+    }
+
+    .time-adapt {
+        display: none;
+    }
+
+    .first-screen {}
+
+    .card-item__1 {
+        margin-left: -140px;
+
+    }
+
+
 }

@@ -54,17 +54,18 @@
     <header class="header" id="header">
         <div class="container">
             <div class="header__row">
-                <a href="" class="header__logo logo" href="/">
+                <a class="header__logo logo" href="/">
                     <img src="assets\icons\Group 150.svg" alt="Логотип компании BikePark" width="66">
                 </a>
-
                 <nav class="header__navigation nav">
                     <ul class="nav__menu menu list-reset">
-                        <li class="menu__item">
-                            <a href="" class="menu__link">
-                                <h4>О нас</h4>
-                            </a>
-                        </li>
+                        <div class="menu__item-adapt">
+                            <li class="menu__item menu__item-adapt">
+                                <a href="" class="menu__link">
+                                    <h4>О нас</h4>
+                                </a>
+                            </li>
+                        </div>
                         <li class="menu__item">
                             <a href="#" class="menu__link menu__link_active">
                                 Аренда
@@ -75,16 +76,18 @@
                                 Доставка
                             </a>
                         </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                Где кататься
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">
-                                Контакты
-                            </a>
-                        </li>
+                        <div class="menu__item-adapt">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    Где кататься
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </div>
                     </ul>
                 </nav>
 
@@ -101,7 +104,7 @@
 
 
                 <div class="header__time">
-                    <time class="h-time" datetime="09:00">9:00 PM</time>
+                    <time class="h-time" datetime="09:00">9:00 <p class="time-adapt">PM</p> </time>
                     <h5 class="text__time ">Time in Dubai</h5>
                 </div>
 
@@ -242,7 +245,7 @@
                                 </div>
                                 <div class="form__checkbox-add__1">
                                     <input type="checkbox" name="add-velo__1" class="custom-checkbox" value="Добавить"
-                                        id="add-velo__1">
+                                        id="add-velo__1" checked>
                                     <label for="add-velo__1"></label>
                                 </div>
                             </div>
