@@ -235,6 +235,7 @@ figure {
 
 .text__time {
     margin: 0;
+    display: block;
     text-align: center;
     font-family: "Montserrat-Medium", Arial, sans-serif;
     font-size: 0.875rem;
@@ -714,6 +715,7 @@ input.datetime-local {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .info-item {
@@ -1259,8 +1261,19 @@ input.datetime-local {
 
     .header__time {
         font-size: 1.125rem;
+        margin-left: 123px;
         font-weight: 700;
         text-align: right;
+    }
+
+    .text__time {
+        width: 85px;
+        height: 15px;
+        display: block;
+    }
+
+    .time-adapt {
+        display: flex;
     }
 
     nav {
@@ -1314,13 +1327,22 @@ input.datetime-local {
     }
 
     .first-screen__cards {
-        max-width: 691px;
+        width: 300px;
+        display: inline-flex;
+    }
+
+    .first-screen__title {
+        max-width: 300px;
+
         width: 100%;
+        height: 100%;
+        margin-top: 31px;
+        margin-bottom: 25px;
     }
 
     .container {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 0 40px;
+
     }
 
     .rent-velo__parameters {
@@ -1336,23 +1358,286 @@ input.datetime-local {
         background: url('..//assets/icons/Rectangle 636.svg');
         height: 89px;
         width: 136px;
-        padding: 64px 30px 3px 13px;
+        border-radius: 15px;
+        margin: 0;
+    }
 
+    .adapt-img1 {
+        width: 76px;
+        height: 49px;
+        margin: -25px 40px 5px 5px;
+    }
 
-        border-radius: 15px 0 0 15px;
+    .adapt-img2 {
+        width: 62px;
+        height: 57px;
+        margin: -26px 60px 5px 0px;
+    }
 
+    .adapt-img3 {
+        width: 61px;
+        height: 57px;
+        margin: -26px 60px 5px 10px;
+
+    }
+
+    .service-card__img {}
+
+    .service-card__access1,
+    .service-card__access2,
+    .service-card__access3 {
+        display: none;
+    }
+
+    .service-card__price1 {
+        font-weight: 700;
+        font-size: 0.8125rem;
+        margin: 3px 200px 0px -30px;
+    }
+
+    .service-card__price2 {
+        font-weight: 700;
+        font-size: 0.8125rem;
+        margin: -4px 0px 0px -55px;
+    }
+
+    .service-card__price3 {
+        font-weight: 700;
+        font-size: 0.8125rem;
+        margin: -4px 0px 0px -45px;
     }
 
     .card-item__2 {
         background: url('..//assets/icons/Rectangle 637.svg');
         height: 89px;
-        padding: 64px 30px 3px 13px;
+        width: 129px;
+        margin-right: 0;
+        margin-left: -36px;
     }
 
     .card-item__3 {
         background: url('..//assets/icons/Rectangle 638.svg');
         height: 89px;
-        padding: 64px 30px 3px 13px;
+        width: 100px;
+        margin-right: 0px;
+        margin-left: -29px;
+    }
+
+    .filter-head__gift {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .rent-velo__parameters {
+        max-width: 300px;
+        margin: 0;
+    }
+
+    .parameters-item {
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    .parameters-item__btn {
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        border: 1px solid var(--border-color);
+        border-radius: 15px;
+        padding: 6px 9px;
+    }
+
+    .switch-button {
+        border-radius: 10px;
+        overflow: hidden;
+        width: 280px;
+        text-align: center;
+        font-size: 1rem;
+        color: var(--bg-color);
+        position: relative;
+        padding-right: 120px;
+        position: relative;
+        font-weight: 500;
+    }
+
+    .switch-button-checkbox {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .switch-button:before {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .switch-button-checkbox+.switch-button-label:before {
+        width: 145px;
+        height: 48px;
+    }
+
+    .switch-button-checkbox+.switch-button-label .switch-button-label-span {
+        position: relative;
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .parameters-item__date {
+        flex-wrap: wrap;
+        margin-top: 19px;
+    }
+
+    .parameters-item__time {
+        width: 100%;
+
+        margin-top: 19px;
+        padding: 0px 0px;
+    }
+
+    input.datetime-local {
+        border: 1px solid var(--border-color);
+        border-radius: 15px;
+        padding: 19px 23px 19px 20px;
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .tire {
+        display: none;
+        position: relative;
+    }
+
+    .itc-select__toggle {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+
+    .first-screen__velo {
+        max-width: 1240px;
+        padding-top: 54px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--section-color);
+    }
+
+    .type-velo {
+        width: 220px;
+        padding: 0px 20px 0px 0px;
+    }
+
+    .type-velo__choose {
+        width: 200px;
+
+    }
+
+    .price-velo {
+        width: 70px;
+        font-weight: 700;
+        font-size: 1.250rem;
+    }
+
+    .info-item {
+        margin-left: 20px;
+    }
+
+    .form__checkbox-add__1,
+    .form__checkbox-add__2,
+    .form__checkbox-add__3,
+    .form__checkbox-add__4 {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .type-velo__window {
+        display: none;
+    }
+
+    .type-velo__find {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .footer {
+        height: 487px;
+        padding-top: 59px;
+        padding-bottom: 35px;
+        margin-top: 80px;
+    }
+
+    .footer-top {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .footer-menu {
+        margin-top: 47px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 15px;
+        column-gap: 85px;
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+        padding: 0px 0px 0px 20px;
+        margin-top: 47px;
+    }
+
+    .footer-adapt {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+    }
+
+    .footer-bottom__copir {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer-socials {
+        width: auto;
+        padding-left: 0;
+    }
+
+    .socials-adapt {
+        display: inline-flex;
+        padding: 0;
+        margin: 0;
+        height: 40px;
+    }
+
+    .arend__title,
+    .footer-menu a {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .arend-menu {
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 150%;
+        margin-top: 28px;
+    }
+
+    .scroll {
+        margin: 0 -15px;
+    }
+
+    .velo-wrap {
+        position: relative;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        transition: all 0.4s;
+        will-change: transform;
+        user-select: none;
     }
 }
 
@@ -1432,9 +1717,7 @@ input.datetime-local {
         margin-left: 110px;
     }
 
-    .header__time {
-        margin-left: 20px;
-    }
+
 
     .time-adapt {
         display: none;
@@ -1442,10 +1725,7 @@ input.datetime-local {
 
     .first-screen {}
 
-    .card-item__1 {
-        margin-left: -140px;
-
-    }
+    .card-item__1 {}
 
 
 }
