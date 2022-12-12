@@ -386,7 +386,7 @@ p {
 }
 
 .filter-head__gift {
-    max-width: 650px;
+    width: 100%;
 }
 
 .header__language {
@@ -1262,6 +1262,7 @@ input.datetime-local {
     line-height: 120%;
 }
 
+
 .mobile-menu {
     display: none;
     margin-right: 20px;
@@ -1281,6 +1282,7 @@ input.datetime-local {
     width: 20px;
     height: 2px;
     transition: 0.4s;
+
 
 }
 
@@ -1303,16 +1305,138 @@ input.datetime-local {
     transition: 0.4s;
 }
 
-@media (max-width:768px) {
+@media (max-width:1024px) {
+    .menu__link {
+        font-size: 0.875rem;
+        line-height: 22px;
+
+    }
+
+    .header__language {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        position: relative;
+        height: 20px;
+        width: auto;
+        margin-right: 0;
+    }
+
+    .header__contacts a {
+        font-family: "Montserrat-Bold", Arial, sans-serif;
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .header__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .h-time {
+        font-family: "Montserrat-Bold", Arial, sans-serif;
+        font-size: 1.125rem;
+        line-height: 120%;
+    }
+
+    .text__time {
+
+        font-family: "Montserrat-Medium", Arial, sans-serif;
+        font-size: 0.875rem;
+        line-height: 17px;
+        font-weight: 500;
+
+    }
+
+    .header__navigation {
+        margin-left: 20px;
+    }
+
+    .menu__item-adapt {
+        display: none;
+    }
+
+    .scroll {
+        margin: 0 -15px;
+    }
+
+    .velo-wrap {
+        position: relative;
+        width: 100%;
+        padding: 0 20px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        transition: all 0.4s;
+        will-change: transform;
+        user-select: none;
+    }
+
+    .type-velo__window {
+        display: none;
+    }
+
+    .footer-menu {
+        display: flex;
+        height: 20px;
+    }
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin: 44px -20px 0px;
+    }
+
+    .footer-bottom__copir {
+        display: block;
+    }
+
+    .footer-adapt {
+        margin-left: 1px;
+        padding-top: 13px;
+        display: block;
+    }
+
+    .socials-adapt {
+        padding: 0;
+        margin-top: -33px;
+        margin-left: 452px;
+    }
+
+}
+
+@media (max-width:920px) {
     .h1 {
         font-size: 2.250rem;
         line-height: 100%;
+        font-weight: 600;
     }
 
 
     .menu__link {
         font-weight: 500;
         font-size: 0.875rem;
+    }
+
+    .mobile-menu {
+        display: flex;
+        position: relative;
+        height: 20px;
+        width: auto;
+        margin-right: 0;
+    }
+
+    .b-link_fmenu {
+        font-weight: 600;
+        margin: 0;
     }
 
     .header__logo {
@@ -1365,12 +1489,30 @@ input.datetime-local {
 
     }
 
+    .container {
+        position: relative;
+        width: 100%;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    .first-screen__title {
+        text-align: left;
+        width: 280px;
+        height: 143px;
+        margin-top: 55px;
+        margin-bottom: 55px;
+        line-height: 120%;
+    }
+
+    .first-screen__cards {
+        margin-left: -40px;
+    }
 
     .header__row {
-        max-width: 690px;
         width: 100%;
         height: 100%;
-        align-items: flex-start;
+        justify-content: space-between;
         display: flex;
         align-items: center;
     }
@@ -1390,10 +1532,402 @@ input.datetime-local {
 
     .card-item__1 {}
 
+    .card-item__1 {
+        background: url('..//assets/icons/Rectangle 636 (1).svg');
+        width: 211px;
+        height: 143px;
+        border-radius: 15px;
+        margin: 0;
+    }
 
+    .adapt-img1 {
+        width: 98px;
+        height: 64px;
+        margin: -10px -10px 5px 40px;
+    }
+
+    .adapt-img2 {
+        width: 75px;
+        height: 65px;
+        margin: -10px 10px 5px 0px;
+    }
+
+    .adapt-img3 {
+        width: 72px;
+        height: 70px;
+        margin: -10px 20px 5px 10px;
+
+    }
+
+    .service-card__img {}
+
+    .service-card__access1 {
+        display: flex;
+        margin: -6px 0 0 -19px;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .service-card__access2 {
+        display: flex;
+        margin: -5px 0 0 -45px;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .service-card__access3 {
+        display: flex;
+        margin: -10px 0 0 -35px;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    .service-card__price1 {
+        font-weight: 700;
+        font-size: 1.0625rem;
+        margin: 3px 0px 0px -20px;
+    }
+
+    .service-card__price2 {
+        font-weight: 700;
+        font-size: 1.0625rem;
+        margin: 0px 0px 0px -45px;
+    }
+
+    .service-card__price3 {
+        font-weight: 700;
+        font-size: 1.0625rem;
+        margin: 0px 0px 0px -36px;
+    }
+
+    .card-item__2 {
+        background: url('..//assets/icons/Rectangle 637 (1).svg');
+        width: 212px;
+        height: 143px;
+        margin-right: 0;
+        margin-left: -70px;
+    }
+
+    .card-item__3 {
+        background: url('..//assets/icons/Rectangle 638 (1).svg');
+        width: 175px;
+        height: 143px;
+        margin-right: 0px;
+        margin-left: -75px;
+    }
+
+    .rent-velo__parameters {
+        display: grid;
+
+        gap: 20px;
+    }
+
+    .scroll {
+        margin: 0 -15px;
+    }
+
+    .velo-wrap {
+        position: relative;
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        transition: all 0.4s;
+        will-change: transform;
+        user-select: none;
+    }
+
+    .type-velo__window {
+        display: none;
+
+    }
+
+    .footer-menu {
+        display: flex;
+        height: 20px;
+    }
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin: 44px -20px 0px;
+    }
+
+    .footer-bottom__copir {
+        display: block;
+    }
+
+    .footer-adapt {
+        margin-left: 1px;
+        padding-top: 13px;
+        display: block;
+    }
+
+    .socials-adapt {
+        padding: 0;
+        margin-top: -33px;
+        margin-left: 452px;
+    }
+
+    .arend-menu {
+        margin-top: 28px;
+    }
 }
 
-@media (max-width:380px) {
+@media (max-width: 639px) {
+    body {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .header__call {
+        display: none;
+    }
+
+    .header__account {
+        margin-left: auto;
+    }
+
+    .h-time {
+        text-align: center;
+    }
+
+    .mobile-menu {
+        display: flex;
+        position: relative;
+        height: 20px;
+        width: auto;
+        margin-right: 0;
+    }
+
+    .first-screen__cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .first-screen__title {
+        width: 100%;
+        height: 100%;
+        margin-top: 31px;
+        margin-bottom: 25px;
+    }
+
+    .container {
+        width: 100%;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+
+    .rent-velo__parameters {
+        flex-wrap: wrap;
+    }
+
+    .row {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .card-item__1 {
+        background: url('..//assets/icons/Rectangle 636.svg');
+        height: 89px;
+        width: 136px;
+        border-radius: 15px;
+        margin: 0;
+    }
+
+    .adapt-img1 {
+        width: 76px;
+        height: 49px;
+        margin: -25px 40px 5px 5px;
+    }
+
+    .adapt-img2 {
+        width: 62px;
+        height: 57px;
+        margin: -26px 60px 5px 0px;
+    }
+
+    .adapt-img3 {
+        width: 61px;
+        height: 57px;
+        margin: -26px 60px 5px 10px;
+
+    }
+
+    .service-card__img {}
+
+    .service-card__access1,
+    .service-card__access2,
+    .service-card__access3 {
+        display: none;
+    }
+
+    .service-card__price1 {
+        font-weight: 700;
+        font-size: 0.8125rem;
+        margin: 3px 200px 0px -30px;
+    }
+
+    .service-card__price2 {
+        font-weight: 700;
+        font-size: 0.8125rem;
+        margin: -4px 0px 0px -55px;
+    }
+
+    .service-card__price3 {
+        font-weight: 700;
+        font-size: 0.8125rem;
+        margin: -4px 0px 0px -45px;
+    }
+
+    .card-item__2 {
+        background: url('..//assets/icons/Rectangle 637.svg');
+        height: 89px;
+        width: 129px;
+        margin-right: 0;
+        margin-left: -36px;
+    }
+
+    .card-item__3 {
+        background: url('..//assets/icons/Rectangle 638.svg');
+        height: 89px;
+        width: 100px;
+        margin-right: 0px;
+        margin-left: -29px;
+    }
+
+    .filter-head__gift {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+    }
+
+    .rent-velo__parameters {
+        width: 100%;
+        margin: 0;
+    }
+
+    .rent-velo__delivery {
+        padding-top: 19px;
+    }
+
+    .parameters-item {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .parameters-item__btn {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        border: 1px solid var(--border-color);
+        border-radius: 15px;
+        padding: 6px 9px;
+    }
+
+    .switch-button {
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 280px;
+        text-align: center;
+        font-size: 1rem;
+        color: var(--bg-color);
+        position: relative;
+        padding-right: 120px;
+        position: relative;
+        font-weight: 500;
+    }
+
+    .switch-button-checkbox {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .switch-button:before {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .switch-button-checkbox+.switch-button-label:before {
+        width: 145px;
+        height: 48px;
+    }
+
+    .switch-button-checkbox+.switch-button-label .switch-button-label-span {
+        position: relative;
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .parameters-item__date {
+        flex-wrap: wrap;
+    }
+
+    .parameters-item__title {
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 19px;
+    }
+
+
+    .parameters-item__time {
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    input.datetime-local {
+        border: 1px solid var(--border-color);
+        border-radius: 15px;
+        padding: 19px 23px 19px 20px;
+        color: var(--text-color);
+        font-weight: 500;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .tire {
+        display: none;
+        position: relative;
+    }
+
+    .itc-select {
+        position: relative;
+        width: 100%;
+    }
+
+    .itc-select__toggle {
+        font-weight: 500;
+        font-size: 1rem;
+        font-family: "Montserrat-Medium", Arial, sans-serif;
+    }
+
+    .itc-select__option {
+        padding: 0.375rem 0.75rem;
+        font-family: "Montserrat-Medium", Arial, sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 120%;
+    }
+}
+
+@media (max-width:440px) {
     .h1 {
         font-size: 2rem;
         line-height: 100%;
@@ -1469,9 +2003,10 @@ input.datetime-local {
 
     .mobile-menu {
         display: flex;
-        margin-left: 12px;
-        margin-right: 0;
+        position: relative;
         height: 20px;
+        width: auto;
+        margin-right: 0;
     }
 
     .b-link_fmenu {
@@ -1480,10 +2015,10 @@ input.datetime-local {
     }
 
     .header__row {
-        height: 100%;
-        align-items: flex-start;
+        width: 100%;
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     body {
@@ -1492,13 +2027,13 @@ input.datetime-local {
     }
 
     .first-screen__cards {
-        width: 300px;
-        display: inline-flex;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
     }
 
     .first-screen__title {
-        max-width: 300px;
-
         width: 100%;
         height: 100%;
         margin-top: 31px;
@@ -1506,8 +2041,13 @@ input.datetime-local {
     }
 
     .container {
-        padding: 0 40px;
+        width: 100%;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
     }
+
 
     .rent-velo__parameters {
         flex-wrap: wrap;
@@ -1516,6 +2056,7 @@ input.datetime-local {
     .row {
         align-items: flex-start;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .card-item__1 {
@@ -1588,12 +2129,13 @@ input.datetime-local {
     }
 
     .filter-head__gift {
-        margin-left: 0;
         width: 100%;
+        overflow: hidden;
+        display: flex;
     }
 
     .rent-velo__parameters {
-        max-width: 300px;
+        width: 100%;
         margin: 0;
     }
 
@@ -1609,13 +2151,14 @@ input.datetime-local {
     .parameters-item__btn {
         display: flex;
         flex-wrap: wrap;
-        width: 300px;
+        width: 100%;
         border: 1px solid var(--border-color);
         border-radius: 15px;
         padding: 6px 9px;
     }
 
     .switch-button {
+        text-align: center;
         border-radius: 10px;
         overflow: hidden;
         width: 280px;
@@ -1673,7 +2216,7 @@ input.datetime-local {
         color: var(--text-color);
         font-weight: 500;
         font-size: 1rem;
-        width: 300px;
+        width: 100%;
     }
 
     .tire {
@@ -1683,7 +2226,7 @@ input.datetime-local {
 
     .itc-select {
         position: relative;
-        width: 298px;
+        width: 100%;
     }
 
     .itc-select__toggle {
@@ -1720,9 +2263,10 @@ input.datetime-local {
     }
 
     .price-velo {
-        width: 70px;
+        width: 80px;
+
         font-weight: 700;
-        font-size: 1.250rem;
+        font-size: 1.125rem;
     }
 
     .info-item {
@@ -1770,12 +2314,12 @@ input.datetime-local {
 
     .footer-bottom {
         flex-wrap: wrap;
-        padding: 0px 0px 0px 20px;
-        margin-top: 47px;
+        padding: 0px 20px 0px 20px;
+        margin-top: 50px;
     }
 
     .footer-adapt {
-        width: 300px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         height: 40px;
@@ -1824,4 +2368,5 @@ input.datetime-local {
         will-change: transform;
         user-select: none;
     }
+
 }

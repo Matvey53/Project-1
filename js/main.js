@@ -182,3 +182,13 @@ callRequestOverlay.addEventListener('click', handleCloseRequestDialog);
 
 
 
+$(function () {
+    $('.mobile-menu__icon').click(function () {
+        if ($('.header__navigation').is(':visible')) {
+            $('.header__navigation').removeClass('showitems');
+        }
+        else {
+            $('.header__navigation').addClass('showitems');
+        }
+    });
+});
