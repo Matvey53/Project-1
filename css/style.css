@@ -309,6 +309,7 @@ p {
 }
 
 .header__account {
+    background-color: #ffffff;
     margin-left: 20px;
     border: 0;
     cursor: pointer;
@@ -589,7 +590,6 @@ p {
 .find-velo {}
 
 .type-velo__find {
-
     display: flex;
     text-align: center;
     align-items: center;
@@ -749,7 +749,8 @@ input.datetime-local {
 }
 
 .type-velo__window {
-    display: flex;
+    position: absolute;
+    display: none;
     justify-content: space-between;
     align-items: center;
     background: #FFFFFF;
@@ -762,9 +763,13 @@ input.datetime-local {
     color: #ABB1C5;
     padding: 14px 20px;
     border-radius: 15px;
-
+    left: 0;
+    top: 100%;
 }
 
+.info-item:hover>.type-velo__window {
+    display: flex;
+}
 
 .type-velo__text {
     position: relative;
