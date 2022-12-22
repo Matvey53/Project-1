@@ -449,7 +449,7 @@ p {
     align-items: center;
     padding-top: 40px;
     background-color: var(--section-color);
-    max-height: 371px;
+    height: 400px;
 }
 
 .first-screen__cards {
@@ -568,8 +568,8 @@ p {
 
 .first-screen__velo {
     max-width: 1240px;
-    margin: 50px auto;
-    padding-top: 5px;
+    margin: 0px auto;
+    padding-top: 34px;
     align-items: center;
     justify-content: center;
     background-color: var(--section-color);
@@ -591,7 +591,9 @@ p {
 .view-velo {
     margin-top: 21px;
     margin-bottom: 0;
-    text-align: center;
+    margin-left: 35px;
+    font-weight: 500;
+    color: var(--text-color);
 }
 
 .price-velo {
@@ -809,7 +811,6 @@ input.datetime-local {
     height: 76px;
     text-align: left;
     margin: 0;
-
 }
 
 
