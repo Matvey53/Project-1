@@ -1465,6 +1465,25 @@ input.datetime-local {
         margin-left: 452px;
     }
 
+
+    .gray-1 {
+        background-color: var(--bg-color);
+        box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
+        border-radius: 20px;
+        height: 371px;
+    }
+
+    .gray-2 {
+        background-color: var(--bg-color);
+        box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
+        border-radius: 20px;
+        height: 480px;
+    }
+
+    .between-section {
+        display: none;
+    }
+
 }
 
 @media (max-width:920px) {
@@ -1548,6 +1567,24 @@ input.datetime-local {
         width: 100%;
         padding: 0 20px;
         margin: 0 auto;
+    }
+
+    .gray-1 {
+        background-color: var(--bg-color);
+        box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
+        border-radius: 20px;
+        height: 371px;
+    }
+
+    .gray-2 {
+        background-color: var(--bg-color);
+        box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
+        border-radius: 20px;
+        height: 480px;
+    }
+
+    .between-section {
+        display: none;
     }
 
     .first-screen__title {
@@ -1762,7 +1799,17 @@ input.datetime-local {
         position: relative;
         height: 20px;
         width: auto;
+        margin-left: 15px;
         margin-right: 0;
+    }
+
+    .header__time {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-height: 46px;
     }
 
     .first-screen__cards {
@@ -1785,6 +1832,24 @@ input.datetime-local {
         align-items: center;
         justify-content: center;
         padding: 0 20px;
+    }
+
+    .gray-1 {
+        background-color: var(--bg-color);
+        box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
+        border-radius: 20px;
+        height: 371px;
+    }
+
+    .gray-2 {
+        background-color: var(--bg-color);
+        box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
+        border-radius: 20px;
+        height: 480px;
+    }
+
+    .between-section {
+        display: none;
     }
 
 
@@ -2024,6 +2089,15 @@ input.datetime-local {
         color: var(--text-color);
     }
 
+    .mobile-menu {
+        display: flex;
+        position: relative;
+        height: 20px;
+        width: auto;
+        margin-left: 0px;
+        margin-right: 0;
+    }
+
     nav {
         max-height: none;
         top: 0;
@@ -2108,6 +2182,23 @@ input.datetime-local {
         padding: 0 20px;
     }
 
+    .gray-1 {
+        background-color: var(--bg-color);
+        box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
+        border-radius: 20px;
+        height: 371px;
+    }
+
+    .gray-2 {
+        background-color: var(--bg-color);
+        box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
+        border-radius: 20px;
+        height: 480px;
+    }
+
+    .between-section {
+        display: none;
+    }
 
     .rent-velo__parameters {
         flex-wrap: wrap;
