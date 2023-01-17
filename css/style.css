@@ -1569,20 +1569,6 @@ input.datetime-local {
         margin: 0 auto;
     }
 
-    .gray-1 {
-        background-color: var(--bg-color);
-        box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
-        border-radius: 20px;
-        height: 371px;
-    }
-
-    .gray-2 {
-        background-color: var(--bg-color);
-        box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
-        border-radius: 20px;
-        height: 480px;
-    }
-
     .between-section {
         display: none;
     }
@@ -1737,9 +1723,67 @@ input.datetime-local {
 
     }
 
+    .velo-img-1 {
+        position: absolute;
+        left: 25px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-2 {
+        position: absolute;
+        left: 285px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-3 {
+        position: absolute;
+        left: 545px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-4 {
+        position: absolute;
+        left: 800px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .type-velo__choose {
+        width: 220px;
+        margin-left: 5px;
+    }
+
+    .type-velo__bg {
+        background-color: var(--gray-color);
+        border-radius: 15px;
+        width: 240px;
+    }
+
+    .view-velo {
+        margin-top: 21px;
+        margin-bottom: 0;
+        margin-left: 20px;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+
+    .type-velo {
+        margin-right: 20px;
+    }
+
+
     .footer-menu {
         display: flex;
         height: 20px;
+        width: 420px;
+        justify-content: space-between;
     }
 
     .footer-top {
@@ -1775,6 +1819,89 @@ input.datetime-local {
         margin-top: 28px;
     }
 }
+
+@media (max-width: 768px) {
+
+    .h-time {
+        text-align: center;
+    }
+
+    .velo-img-1 {
+        position: absolute;
+        left: 25px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-2 {
+        position: absolute;
+        left: 285px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-3 {
+        position: absolute;
+        left: 545px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-4 {
+        position: absolute;
+        left: 800px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .type-velo__choose {
+        width: 220px;
+        margin-left: 5px;
+    }
+
+    .type-velo__bg {
+        background-color: var(--gray-color);
+        border-radius: 15px;
+        width: 240px;
+    }
+
+    .view-velo {
+        margin-top: 21px;
+        margin-bottom: 0;
+        margin-left: 20px;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+
+    .type-velo {
+        margin-right: 20px;
+    }
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .footer-menu {
+        display: flex;
+        height: 20px;
+        justify-content: space-between;
+        width: 420px;
+    }
+
+
+
+
+
+}
+
+
+
 
 @media (max-width: 639px) {
     body {
@@ -1826,27 +1953,27 @@ input.datetime-local {
         margin-bottom: 25px;
     }
 
+    .first-screen {
+        height: 100%;
+    }
+
+    .first-screen__velo {
+        max-width: 1240px;
+        margin-top: 54px;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--section-color);
+    }
+
     .container {
         width: 100%;
         position: relative;
         align-items: center;
         justify-content: center;
         padding: 0 20px;
+        height: 100%;
     }
 
-    .gray-1 {
-        background-color: var(--bg-color);
-        box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
-        border-radius: 20px;
-        height: 371px;
-    }
-
-    .gray-2 {
-        background-color: var(--bg-color);
-        box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
-        border-radius: 20px;
-        height: 480px;
-    }
 
     .between-section {
         display: none;
@@ -1952,6 +2079,63 @@ input.datetime-local {
         padding: 0px;
     }
 
+    .velo-img-1 {
+        position: absolute;
+        left: 25px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-2 {
+        position: absolute;
+        left: 290px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-3 {
+        position: absolute;
+        left: 550px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-4 {
+        position: absolute;
+        left: 805px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .type-velo__bg {
+        background-color: var(--gray-color);
+        border-radius: 15px;
+        width: 240px;
+        margin-right: 20px;
+    }
+
+    .type-velo__choose {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-left: 5px;
+        width: 220px;
+
+    }
+
+    .view-velo {
+        margin-top: 21px;
+        margin-bottom: 0;
+        margin-left: 20px;
+        font-weight: 500;
+        color: var(--text-color);
+    }
+
     .parameters-item__btn {
         display: flex;
         flex-wrap: wrap;
@@ -2053,6 +2237,11 @@ input.datetime-local {
 }
 
 @media (max-width:440px) {
+
+    .first-screen {
+        height: 100%;
+    }
+
     .h1 {
         font-size: 2rem;
         line-height: 100%;
@@ -2180,20 +2369,7 @@ input.datetime-local {
         align-items: center;
         justify-content: center;
         padding: 0 20px;
-    }
-
-    .gray-1 {
-        background-color: var(--bg-color);
-        box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
-        border-radius: 20px;
-        height: 371px;
-    }
-
-    .gray-2 {
-        background-color: var(--bg-color);
-        box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
-        border-radius: 20px;
-        height: 480px;
+        height: 100%;
     }
 
     .between-section {
@@ -2201,7 +2377,7 @@ input.datetime-local {
     }
 
     .rent-velo__parameters {
-        flex-wrap: wrap;
+        display: flex;
     }
 
     .row {
@@ -2279,6 +2455,38 @@ input.datetime-local {
         margin-left: -29px;
     }
 
+    .velo-img-1 {
+        position: absolute;
+        top: 80px;
+        width: 220px;
+        height: 117px;
+        left: 25px;
+    }
+
+    .velo-img-2 {
+        position: absolute;
+        left: 265px;
+        top: 80px;
+        width: 220px;
+        height: 117px;
+    }
+
+    .velo-img-3 {
+        position: absolute;
+        left: 500px;
+        top: 80px;
+        width: 220px;
+        height: 117px;
+    }
+
+    .velo-img-4 {
+        position: absolute;
+        left: 750px;
+        top: 80px;
+        width: 220px;
+        height: 117px;
+    }
+
     .filter-head__gift {
         width: 100%;
         overflow: hidden;
@@ -2288,6 +2496,7 @@ input.datetime-local {
     .rent-velo__parameters {
         width: 100%;
         margin: 0;
+        position: relative;
     }
 
     .rent-velo__delivery {
@@ -2396,21 +2605,33 @@ input.datetime-local {
 
     .first-screen__velo {
         max-width: 1240px;
-        padding-top: 54px;
-        margin: 0 auto;
+        margin-top: 54px;
+
         align-items: center;
         justify-content: center;
         background-color: var(--section-color);
     }
 
     .type-velo {
-        width: 220px;
+        width: 240px;
         padding: 0px 20px 0px 0px;
+        margin-top: 90px;
+    }
+
+    .type-velo__bg {
+        background-color: var(--gray-color);
+        border-radius: 15px;
+        width: 220px;
+    }
+
+    .view-velo {
+        margin-left: 20px;
+        margin-top: 11px;
     }
 
     .type-velo__choose {
+        margin-left: 20px;
         width: 200px;
-
     }
 
     .price-velo {
