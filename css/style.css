@@ -1471,13 +1471,14 @@ input.datetime-local {
         background-color: var(--gray-color);
         box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
         border-radius: 20px;
-
+        height: 100%;
     }
 
     .gray-2 {
         background-color: var(--gray-color);
         box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
         border-radius: 20px;
+        height: 100%;
     }
 
     .first-screen__velo {
@@ -1486,6 +1487,10 @@ input.datetime-local {
 
     .between-section {
         display: none;
+    }
+
+    .first-screen {
+        height: 100%;
     }
 
     .velo-img-1 {
@@ -1645,13 +1650,23 @@ input.datetime-local {
         margin-left: 110px;
     }
 
-
-
     .time-adapt {
         display: none;
     }
 
-    .first-screen {}
+    .first-screen {
+        height: 100%;
+    }
+
+    .gray-1 {
+        height: 100%;
+        width: 97%;
+    }
+
+    .gray-2 {
+        height: 100%;
+        width: 97%;
+    }
 
     .card-item__1 {}
 
@@ -1755,12 +1770,17 @@ input.datetime-local {
         width: 370px;
     }
 
+    .parameters-item__date {
+        width: 100%;
+
+    }
+
     .parameters-item__time {
         width: 100%;
     }
 
     .parameters-item__btn {
-        width: 330px;
+        width: 100%;
     }
 
     input.datetime-local {
@@ -1976,6 +1996,10 @@ input.datetime-local {
         margin-left: -75px;
     }
 
+    .tire {
+        position: static;
+        margin-top: 50px;
+    }
 
 
     .footer-top {
