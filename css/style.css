@@ -697,9 +697,6 @@ p {
     cursor: pointer;
 }
 
-.rent-velo__delivery {
-    order: 2;
-}
 
 .parameters-item__date {
     width: 560px;
@@ -1134,6 +1131,7 @@ input.datetime-local {
 .socials-adapt {
     margin: 0;
     margin-left: 452px;
+
 }
 
 .footer-privacy {
@@ -1191,19 +1189,6 @@ input.datetime-local {
 .arend__title {
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .itc-select {
     position: relative;
@@ -1317,48 +1302,14 @@ input.datetime-local {
     line-height: 120%;
 }
 
+.socials li {
+    display: inline-block
+}
 
 .mobile-menu {
     display: none;
-    margin-right: 20px;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 38px;
-    cursor: pointer;
-    transition: 0.4s;
 }
 
-.mobile-menu__icon {
-    display: block;
-    position: relative;
-    background: #14233D;
-    width: 20px;
-    height: 2px;
-    transition: 0.4s;
-
-
-}
-
-.mobile-menu__icon:before {
-    top: -8px;
-}
-
-.mobile-menu__icon:after {
-    top: 8px;
-}
-
-.mobile-menu__icon:after,
-.mobile-menu__icon:before {
-    content: "";
-    display: block;
-    position: absolute;
-    background: #14233D;
-    width: 100%;
-    height: 2px;
-    transition: 0.4s;
-}
 
 @media (max-width:1024px) {
     .menu__link {
@@ -1371,13 +1322,7 @@ input.datetime-local {
         display: none;
     }
 
-    .mobile-menu {
-        display: flex;
-        position: relative;
-        height: 20px;
-        width: auto;
-        margin-right: 0;
-    }
+
 
     .header__contacts a {
         font-family: "Montserrat-Bold", Arial, sans-serif;
@@ -1472,6 +1417,8 @@ input.datetime-local {
         box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
         border-radius: 20px;
         height: 100%;
+        padding-bottom: 25px;
+        width: 97%;
     }
 
     .gray-2 {
@@ -1479,6 +1426,8 @@ input.datetime-local {
         box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
         border-radius: 20px;
         height: 100%;
+        padding-bottom: 25px;
+        width: 97%;
     }
 
     .first-screen__velo {
@@ -1535,6 +1484,96 @@ input.datetime-local {
         border-radius: 15px;
         width: 240px;
     }
+
+    .type-velo {
+        padding-right: 20px;
+    }
+
+    .parameters-item {
+        width: 400px;
+    }
+
+    .rent-velo__parameters {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+    }
+
+    .parameters-item__date {
+        order: 1;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    input.datetime-local {
+        width: 360px;
+    }
+
+    .parameters-item__time {
+        width: 360px;
+    }
+
+    .parameters-item__btn {
+        width: 360px;
+    }
+
+    .hamb {
+        cursor: pointer;
+        padding-left: 10px;
+        order: 1;
+    }
+
+    .hamb-line {
+        background: var(--text-color);
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+
+    }
+
+    .hamb-line::before,
+    .hamb-line::after {
+        background: var(--text-color);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .hamb-line::before {
+        top: 5px;
+    }
+
+    .hamb-line::after {
+        top: -5px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu:checked~nav {
+        max-height: 100%;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line {
+        background: transparent;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
 }
 
 @media (max-width:920px) {
@@ -1550,13 +1589,7 @@ input.datetime-local {
         font-size: 0.875rem;
     }
 
-    .mobile-menu {
-        display: flex;
-        position: relative;
-        height: 20px;
-        width: auto;
-        margin-right: 0;
-    }
+
 
     .b-link_fmenu {
         font-weight: 600;
@@ -1661,11 +1694,13 @@ input.datetime-local {
     .gray-1 {
         height: 100%;
         width: 97%;
+        padding-bottom: 25px;
     }
 
     .gray-2 {
         height: 100%;
         width: 97%;
+        padding-bottom: 25px;
     }
 
     .card-item__1 {}
@@ -1767,16 +1802,17 @@ input.datetime-local {
 
     .parameters-item {
         padding: 0 20px;
-        width: 370px;
+        width: 330px;
     }
 
     .parameters-item__date {
         width: 100%;
-
+        order: 1;
+        justify-content: space-between;
     }
 
     .parameters-item__time {
-        width: 100%;
+        width: 290px;
     }
 
     .parameters-item__btn {
@@ -1784,7 +1820,7 @@ input.datetime-local {
     }
 
     input.datetime-local {
-        width: 330px;
+        width: 290px;
     }
 
     .scroll {
@@ -1808,7 +1844,7 @@ input.datetime-local {
 
     .velo-img-1 {
         position: absolute;
-        left: 25px;
+        left: 20px;
         top: 80px;
         width: 240px;
         height: 127px;
@@ -1816,7 +1852,7 @@ input.datetime-local {
 
     .velo-img-2 {
         position: absolute;
-        left: 285px;
+        left: 300px;
         top: 80px;
         width: 240px;
         height: 127px;
@@ -1824,7 +1860,7 @@ input.datetime-local {
 
     .velo-img-3 {
         position: absolute;
-        left: 545px;
+        left: 580px;
         top: 80px;
         width: 240px;
         height: 127px;
@@ -1832,7 +1868,7 @@ input.datetime-local {
 
     .velo-img-4 {
         position: absolute;
-        left: 800px;
+        left: 860px;
         top: 80px;
         width: 240px;
         height: 127px;
@@ -1844,7 +1880,7 @@ input.datetime-local {
     }
 
     .type-velo__bg {
-        background-color: var(--gray-color);
+        background-color: var(--bg-color);
         border-radius: 15px;
         width: 240px;
     }
@@ -1858,7 +1894,7 @@ input.datetime-local {
     }
 
     .type-velo {
-        margin-right: 20px;
+        padding-right: 20px;
     }
 
 
@@ -1901,8 +1937,209 @@ input.datetime-local {
     .arend-menu {
         margin-top: 28px;
     }
+
+    .hamb {
+        cursor: pointer;
+        float: right;
+
+        order: 1;
+    }
+
+    .hamb-line {
+        background: var(--text-color);
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+
+    }
+
+    .hamb-line::before,
+    .hamb-line::after {
+        background: var(--text-color);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .hamb-line::before {
+        top: 5px;
+    }
+
+    .hamb-line::after {
+        top: -5px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu:checked~nav {
+        max-height: 100%;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line {
+        background: transparent;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .hamb {
+        cursor: pointer;
+        order: 1;
+    }
+
+    .hamb-line {
+        background: var(--text-color);
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+
+    }
+
+    .hamb-line::before,
+    .hamb-line::after {
+        background: var(--text-color);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .hamb-line::before {
+        top: 5px;
+    }
+
+    .hamb-line::after {
+        top: -5px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu:checked~nav {
+        max-height: 100%;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line {
+        background: transparent;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
 }
 
+@media (max-width: 834px) {
+    .velo-img-1 {
+        position: absolute;
+        left: 25px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-2 {
+        position: absolute;
+        left: 285px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-3 {
+        position: absolute;
+        left: 545px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-4 {
+        position: absolute;
+        left: 800px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .hamb {
+        cursor: pointer;
+        order: 1;
+    }
+
+    .hamb-line {
+        background: var(--text-color);
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+
+    }
+
+    .hamb-line::before,
+    .hamb-line::after {
+        background: var(--text-color);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .hamb-line::before {
+        top: 5px;
+    }
+
+    .hamb-line::after {
+        top: -5px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu:checked~nav {
+        max-height: 100%;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line {
+        background: transparent;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+}
 
 
 @media (max-width: 768px) {
@@ -1977,7 +2214,7 @@ input.datetime-local {
     }
 
     .type-velo {
-        margin-right: 20px;
+        padding-right: 20px;
     }
 
     .row {
@@ -1996,10 +2233,7 @@ input.datetime-local {
         margin-left: -75px;
     }
 
-    .tire {
-        position: static;
-        margin-top: 50px;
-    }
+
 
 
     .footer-top {
@@ -2021,6 +2255,62 @@ input.datetime-local {
 
     .socials-adapt {
         display: none;
+    }
+
+    .hamb {
+        cursor: pointer;
+        padding-left: 10px;
+        order: 1;
+    }
+
+    .hamb-line {
+        background: var(--text-color);
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+
+    }
+
+    .hamb-line::before,
+    .hamb-line::after {
+        background: var(--text-color);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .hamb-line::before {
+        top: 5px;
+    }
+
+    .hamb-line::after {
+        top: -5px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu:checked~nav {
+        max-height: 100%;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line {
+        background: transparent;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top: 0;
     }
 
 }
@@ -2046,14 +2336,7 @@ input.datetime-local {
         text-align: center;
     }
 
-    .mobile-menu {
-        display: flex;
-        position: relative;
-        height: 20px;
-        width: auto;
-        margin-left: 15px;
-        margin-right: 0;
-    }
+
 
     .header__time {
         margin-left: 20px;
@@ -2217,7 +2500,7 @@ input.datetime-local {
 
     .velo-img-1 {
         position: absolute;
-        left: 25px;
+        left: 20px;
         top: 80px;
         width: 240px;
         height: 127px;
@@ -2225,7 +2508,7 @@ input.datetime-local {
 
     .velo-img-2 {
         position: absolute;
-        left: 300px;
+        left: 280px;
         top: 80px;
         width: 240px;
         height: 127px;
@@ -2233,7 +2516,7 @@ input.datetime-local {
 
     .velo-img-3 {
         position: absolute;
-        left: 580px;
+        left: 540px;
         top: 80px;
         width: 240px;
         height: 127px;
@@ -2241,7 +2524,7 @@ input.datetime-local {
 
     .velo-img-4 {
         position: absolute;
-        left: 860px;
+        left: 800px;
         top: 80px;
         width: 240px;
         height: 127px;
@@ -2375,6 +2658,62 @@ input.datetime-local {
         font-size: 1rem;
         line-height: 120%;
     }
+
+    .hamb {
+        cursor: pointer;
+        padding-left: 10px;
+        order: 1;
+    }
+
+    .hamb-line {
+        background: var(--text-color);
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+
+    }
+
+    .hamb-line::before,
+    .hamb-line::after {
+        background: var(--text-color);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .hamb-line::before {
+        top: 5px;
+    }
+
+    .hamb-line::after {
+        top: -5px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu:checked~nav {
+        max-height: 100%;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line {
+        background: transparent;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
 }
 
 @media (max-width:440px) {
@@ -2419,14 +2758,7 @@ input.datetime-local {
         color: var(--text-color);
     }
 
-    .mobile-menu {
-        display: flex;
-        position: relative;
-        height: 20px;
-        width: auto;
-        margin-left: 0px;
-        margin-right: 0;
-    }
+
 
     nav {
         max-height: none;
@@ -2465,13 +2797,6 @@ input.datetime-local {
         color: var(--text-color);
     }
 
-    .mobile-menu {
-        display: flex;
-        position: relative;
-        height: 20px;
-        width: auto;
-        margin-right: 0;
-    }
 
     .b-link_fmenu {
         font-weight: 600;
@@ -2615,12 +2940,12 @@ input.datetime-local {
         top: 80px;
         width: 220px;
         height: 117px;
-        left: 25px;
+        left: 20px;
     }
 
     .velo-img-2 {
         position: absolute;
-        left: 280px;
+        left: 260px;
         top: 80px;
         width: 220px;
         height: 117px;
@@ -2628,7 +2953,7 @@ input.datetime-local {
 
     .velo-img-3 {
         position: absolute;
-        left: 540px;
+        left: 500px;
         top: 80px;
         width: 220px;
         height: 117px;
@@ -2636,7 +2961,7 @@ input.datetime-local {
 
     .velo-img-4 {
         position: absolute;
-        left: 800px;
+        left: 740px;
         top: 80px;
         width: 220px;
         height: 117px;
@@ -2894,6 +3219,62 @@ input.datetime-local {
         will-change: transform;
         user-select: none;
     }
+
+    .hamb {
+        cursor: pointer;
+        order: 1;
+    }
+
+    .hamb-line {
+        background: var(--text-color);
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+
+    }
+
+    .hamb-line::before,
+    .hamb-line::after {
+        background: var(--text-color);
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .hamb-line::before {
+        top: 5px;
+    }
+
+    .hamb-line::after {
+        top: -5px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu:checked~nav {
+        max-height: 100%;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line {
+        background: transparent;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .mobile-menu:checked~.hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
 
 }
 

@@ -8,12 +8,12 @@
     <title>BikePark</title>
 
     <!-- Normalize CSS -->
-    <link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <script src="js\main.js"></script>
+    <script src="js/main.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             ItcCustomSelect.create('#select-1', {
@@ -55,9 +55,10 @@
         <div class="container">
             <div class="header__row">
                 <a class="header__logo logo" href="/">
-                    <img src="assets\icons\Group 150.svg" alt="Логотип компании BikePark" width="66">
+                    <img src="assets/icons/Group150.svg" alt="Логотип компании BikePark" width="66">
                 </a>
-
+                <input class="mobile-menu" type="checkbox" id="mobile-menu" />
+                <label class="hamb" for="mobile-menu"><span class="hamb-line"></span></label>
                 <nav class="header__navigation nav">
                     <ul class="nav__menu menu list-reset">
                         <div class="menu__item-adapt">
@@ -97,15 +98,17 @@
                         +971 52 563 4064
                     </a>
                 </div>
-                <button class="header__account" type="button"><img src="assets\icons\Group 268.svg" alt="Личный Кабинет"
-                        width="40"> </button>
+                <button class="header__account" type="button">
+                    <img src="assets/icons/Group268.svg" alt="Личный Кабинет" width="40"> </button>
 
                 <button class="header__call btn" type="button" id="call-request">FEEDBACK</button>
 
 
 
                 <div class="header__time">
-                    <time class="h-time" datetime="09:00">9:00 <p class="time-adapt">PM</p> </time>
+                    <time class="h-time" datetime="09:00">9:00
+                        <p class="time-adapt">PM</p>
+                    </time>
                     <h5 class="text__time ">Time in Dubai</h5>
                 </div>
 
@@ -121,11 +124,7 @@
                         <li><a class="language__link" href="#">FR</a></li>
                     </ul>
                 </div>
-                <div class="b-head__right">
-                    <div class="mobile-menu">
-                        <div class="mobile-menu__icon"></div>
-                    </div>
-                </div>
+
             </div>
 
         </div>
@@ -146,21 +145,21 @@
                         <div class="first-screen__cards">
 
                             <article class="service-card card-item__1">
-                                <figure class="service-card__img"><img class="adapt-img1" src="assets\img\image 12.png"
+                                <figure class="service-card__img"><img class="adapt-img1" src="assets/img/image12.png"
                                         alt="Шлем">
                                 </figure>
                                 <h3 class="service-card__access1 h3">Шлем</h3>
                                 <p class="service-card__price1 ">Бесплатно</p>
                             </article>
                             <article class="service-card card-item__2">
-                                <figure class="service-card__img"><img class="adapt-img2" src="assets\img\image 13.png"
+                                <figure class="service-card__img"><img class="adapt-img2" src="assets/img/image13.png"
                                         alt="Фонарик">
                                 </figure>
                                 <h3 class="service-card__access2 h3">Фонарик</h3>
                                 <p class="service-card__price2 ">Бесплатно</p>
                             </article>
                             <article class="service-card card-item__3">
-                                <figure class="service-card__img"><img class="adapt-img3" src="assets\img\image 14.png"
+                                <figure class="service-card__img"><img class="adapt-img3" src="assets/img/image14.png"
                                         alt="Замок">
                                 </figure>
                                 <h3 class="service-card__access3 h3">Замок</h3>
@@ -179,8 +178,8 @@
                             <div class="parameters-item__title ">Тип аренды</div>
                             <div class="parameters-item__btn">
                                 <div class="switch-button">
-                                    <input class="switch-button-checkbox" type="checkbox"></input>
-                                    <label class="switch-button-label" for=""><span class="switch-button-label-span">
+                                    <input class="switch-button-checkbox" type="checkbox">
+                                    <label class="switch-button-label"><span class="switch-button-label-span">
                                             По дням</span></label>
                                 </div>
                             </div>
@@ -195,11 +194,7 @@
                             </script>
                         </div>
 
-                        <div class="parameters-item rent-velo__delivery">
-                            <div class="parameters-item__title ">Доставка</div>
 
-                            <div id="select-1"></div>
-                        </div>
 
                         <div class="parameters-item parameters-item__date" id="two-inputs">
                             <div class="parameters-item__time">
@@ -218,9 +213,11 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="parameters-item rent-velo__delivery">
+                            <div class="parameters-item__title ">Доставка</div>
 
-
-
+                            <div id="select-1"></div>
+                        </div>
                     </div>
 
                 </div>
@@ -245,7 +242,7 @@
                             <div class="row-cards">
                                 <article class="type-velo">
                                     <article class="type-velo__bg">
-                                        <img class="velo-img-1" src="assets\img\image 24.png" alt="Велосипед">
+                                        <img class="velo-img-1" src="assets/img/image24.png" alt="Велосипед">
                                         <h3 class="view-velo h3">Алюминий</h3>
                                         <div class="type-velo__choose">
                                             <h3 class="price-velo h3">90 AED</h3>
@@ -279,7 +276,7 @@
                                 </article>
                                 <article class="type-velo">
                                     <article class="type-velo__bg">
-                                        <img class="velo-img-2" src="assets\img\image 24.png" alt="Велосипед">
+                                        <img class="velo-img-2" src="assets/img/image24.png" alt="Велосипед">
                                         <h3 class="view-velo h3">Карбон</h3>
                                         <div class="type-velo__choose">
                                             <h3 class="price-velo h3">180 AED</h3>
@@ -313,7 +310,7 @@
                                 </article>
                                 <article class="type-velo">
                                     <article class="type-velo__bg">
-                                        <img class="velo-img-3" src="assets\img\image 24.png" alt="Велосипед">
+                                        <img class="velo-img-3" src="assets/img/image24.png" alt="Велосипед">
                                         <h3 class="view-velo h3">Горный/городской</h3>
                                         <div class="type-velo__choose">
                                             <h3 class="price-velo h3">90 AED</h3>
@@ -347,7 +344,7 @@
                                 </article>
                                 <article class="type-velo">
                                     <article class="type-velo__bg">
-                                        <img class="velo-img-4" src="assets\img\image 24.png" alt="Велосипед">
+                                        <img class="velo-img-4" src="assets/img/image24.png" alt="Велосипед">
                                         <h3 class="view-velo h3">Городской эконом</h3>
                                         <div class="type-velo__choose">
                                             <h3 class="price-velo h3">45 AED</h3>
@@ -463,7 +460,7 @@
                     <div class="footer-socials">
                         <div class="socials">
                             <ul class="socials-adapt">
-                                <il>
+                                <li>
                                     <a href="#" class="socials-item">
                                         <svg width="16" height="32" viewBox="0 0 16 32" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -473,8 +470,8 @@
                                         </svg>
 
                                     </a>
-                                </il>
-                                <il>
+                                </li>
+                                <li>
                                     <a href="#" class="socials-item">
                                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -485,15 +482,15 @@
 
 
                                     </a>
-                                </il>
+                                </li>
                             </ul>
-                            </a>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+
     </footer>
 
 
