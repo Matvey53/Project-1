@@ -457,6 +457,7 @@ p {
     display: inline-flex;
     max-width: 691px;
     width: 100%;
+    margin-left: -20px;
 }
 
 .service-card {
@@ -1467,23 +1468,68 @@ input.datetime-local {
 
 
     .gray-1 {
-        background-color: var(--bg-color);
+        background-color: var(--gray-color);
         box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
         border-radius: 20px;
-        height: 371px;
+
     }
 
     .gray-2 {
-        background-color: var(--bg-color);
+        background-color: var(--gray-color);
         box-shadow: 10px 20px 50px rgb(229 233 246 / 40%);
         border-radius: 20px;
-        height: 480px;
+    }
+
+    .first-screen__velo {
+        padding-top: 35px;
     }
 
     .between-section {
         display: none;
     }
 
+    .velo-img-1 {
+        position: absolute;
+        left: 25px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-2 {
+        position: absolute;
+        left: 285px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-3 {
+        position: absolute;
+        left: 545px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .velo-img-4 {
+        position: absolute;
+        left: 800px;
+        top: 80px;
+        width: 240px;
+        height: 127px;
+    }
+
+    .type-velo__choose {
+        width: 220px;
+        margin-left: 5px;
+    }
+
+    .type-velo__bg {
+        background-color: var(--bg-color);
+        border-radius: 15px;
+        width: 240px;
+    }
 }
 
 @media (max-width:920px) {
@@ -1699,9 +1745,26 @@ input.datetime-local {
     }
 
     .rent-velo__parameters {
-        display: grid;
-
+        display: flex;
+        flex-wrap: wrap;
         gap: 20px;
+    }
+
+    .parameters-item {
+        padding: 0 20px;
+        width: 370px;
+    }
+
+    .parameters-item__time {
+        width: 100%;
+    }
+
+    .parameters-item__btn {
+        width: 330px;
+    }
+
+    input.datetime-local {
+        width: 330px;
     }
 
     .scroll {
@@ -1820,7 +1883,23 @@ input.datetime-local {
     }
 }
 
+
+
 @media (max-width: 768px) {
+    .first-screen {
+        height: 100%;
+    }
+
+    .gray-1 {
+        height: 100%;
+        background-color: var(--gray-color);
+        width: 95%;
+    }
+
+    .gray-2 {
+        background-color: var(--gray-color);
+        width: 95%;
+    }
 
     .h-time {
         text-align: center;
@@ -1864,7 +1943,7 @@ input.datetime-local {
     }
 
     .type-velo__bg {
-        background-color: var(--gray-color);
+        background-color: var(--bg-color);
         border-radius: 15px;
         width: 240px;
     }
@@ -1881,6 +1960,24 @@ input.datetime-local {
         margin-right: 20px;
     }
 
+    .row {
+        display: inline-flex;
+        margin: 0px 0px 20px 0;
+
+    }
+
+    .filter-head__gift {
+        width: 410px;
+        margin-left: 20px;
+    }
+
+    .card-item__3 {
+        margin-right: 0px;
+        margin-left: -75px;
+    }
+
+
+
     .footer-top {
         display: flex;
         justify-content: space-between;
@@ -1894,9 +1991,13 @@ input.datetime-local {
         width: 420px;
     }
 
+    .footer-socials {
+        width: 100%;
+    }
 
-
-
+    .socials-adapt {
+        display: none;
+    }
 
 }
 
@@ -1974,6 +2075,17 @@ input.datetime-local {
         height: 100%;
     }
 
+    .gray-1 {
+        background-color: var(--gray-color);
+        width: 90%;
+        padding-bottom: 25px;
+    }
+
+    .gray-2 {
+        background-color: var(--gray-color);
+        width: 90%;
+        padding-bottom: 25px;
+    }
 
     .between-section {
         display: none;
@@ -2089,7 +2201,7 @@ input.datetime-local {
 
     .velo-img-2 {
         position: absolute;
-        left: 290px;
+        left: 300px;
         top: 80px;
         width: 240px;
         height: 127px;
@@ -2097,7 +2209,7 @@ input.datetime-local {
 
     .velo-img-3 {
         position: absolute;
-        left: 550px;
+        left: 580px;
         top: 80px;
         width: 240px;
         height: 127px;
@@ -2105,14 +2217,14 @@ input.datetime-local {
 
     .velo-img-4 {
         position: absolute;
-        left: 805px;
+        left: 860px;
         top: 80px;
         width: 240px;
         height: 127px;
     }
 
     .type-velo__bg {
-        background-color: var(--gray-color);
+        background-color: var(--bg-color);
         border-radius: 15px;
         width: 240px;
         margin-right: 20px;
@@ -2144,6 +2256,11 @@ input.datetime-local {
         border-radius: 15px;
         padding: 6px 9px;
         background-color: var(--bg-color);
+
+    }
+
+    .rent-velo__delivery {
+        position: static;
 
     }
 
@@ -2372,6 +2489,20 @@ input.datetime-local {
         height: 100%;
     }
 
+    .gray-1 {
+        background-color: var(--gray-color);
+        padding-bottom: 25px;
+        width: 90%;
+    }
+
+    .gray-2 {
+        background-color: var(--gray-color);
+        border-radius: 20px;
+        padding-bottom: 25px;
+        width: 90%;
+
+    }
+
     .between-section {
         display: none;
     }
@@ -2465,7 +2596,7 @@ input.datetime-local {
 
     .velo-img-2 {
         position: absolute;
-        left: 265px;
+        left: 280px;
         top: 80px;
         width: 220px;
         height: 117px;
@@ -2473,7 +2604,7 @@ input.datetime-local {
 
     .velo-img-3 {
         position: absolute;
-        left: 500px;
+        left: 540px;
         top: 80px;
         width: 220px;
         height: 117px;
@@ -2481,7 +2612,7 @@ input.datetime-local {
 
     .velo-img-4 {
         position: absolute;
-        left: 750px;
+        left: 800px;
         top: 80px;
         width: 220px;
         height: 117px;
@@ -2606,7 +2737,6 @@ input.datetime-local {
     .first-screen__velo {
         max-width: 1240px;
         margin-top: 54px;
-
         align-items: center;
         justify-content: center;
         background-color: var(--section-color);
@@ -2619,7 +2749,7 @@ input.datetime-local {
     }
 
     .type-velo__bg {
-        background-color: var(--gray-color);
+        background-color: var(--bg-color);
         border-radius: 15px;
         width: 220px;
     }
@@ -2741,4 +2871,11 @@ input.datetime-local {
         user-select: none;
     }
 
+}
+
+@media (max-width:375px) {
+    .first-screen__cards {
+        width: 280px;
+
+    }
 }
