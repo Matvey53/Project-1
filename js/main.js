@@ -159,10 +159,19 @@ class ItcCustomSelect {
 ItcCustomSelect.hideOpenSelect();
 
 
-$(document).ready(function () {
-    $('.hamb').click(function (event) {
-        $('.mobile-menu,.header__navigation').toggleClass('active');
-    });
-});
+const openBtn = document.querySelector('#mb-1');
+const closeBtn = document.querySelector('#mb-2');
+const mobMenu = document.querySelector('#call-request-dialog');
+const mobMenuOverlay = document.querySelector('#call-request-overlay');
 
+function openMobMenu() {
+    mobMenu.classList.add('.dialog_active');
+}
 
+function closeMobMenu() {
+    mobMenu.classList.remove('.dialog_active');
+}
+
+openBtn.addEventListener('click', openMobMenu);
+closeBtn.addEventListener('click', closeMobMenu);
+mobMenuOverlay.addEventListener('click', closeMobMenu);
