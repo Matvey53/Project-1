@@ -715,6 +715,13 @@ p {
 
 }
 
+.parameters-item__title-time {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ABB1C5;
+    margin-bottom: 13px;
+}
 
 .parameters-item__range {}
 
@@ -2531,6 +2538,10 @@ input.datetime-local {
         padding: 0px;
     }
 
+    .parameters-item__date {
+        order: 0;
+    }
+
     .velo-img-1 {
         position: absolute;
         left: 20px;
@@ -2647,7 +2658,13 @@ input.datetime-local {
     .parameters-item__title {
         font-weight: 500;
         font-size: 1rem;
-        margin-top: 19px;
+        margin-top: 0px;
+    }
+
+    .parameters-item__title-time {
+        font-weight: 500;
+        font-size: 1rem;
+        margin-top: 20px;
     }
 
 
