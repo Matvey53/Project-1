@@ -158,20 +158,31 @@ class ItcCustomSelect {
 
 ItcCustomSelect.hideOpenSelect();
 
-
 const openBtn = document.querySelector('#mb-1');
 const closeBtn = document.querySelector('#mb-2');
 const mobMenu = document.querySelector('#call-request-dialog');
 const mobMenuOverlay = document.querySelector('#call-request-overlay');
+const header = document.querySelector('.header')
+const mobMenuBtn = document.querySelector('.mob-menu__btn');
+const closeBtn1 = document.querySelector('#mb-1');
+const closeBtn2 = document.querySelector('#mb-2');
+
 
 function openMobMenu() {
-    mobMenu.classList.add('.dialog_active');
-}
+    mobMenu.classList.add('dialog_active');
+    header.classList.add('fixer')
+    closeBtn1.classList.add('active')
+    closeBtn2.classList.remove('active')
 
+}
 function closeMobMenu() {
-    mobMenu.classList.remove('.dialog_active');
+    mobMenu.classList.remove('dialog_active');
+    header.classList.remove('fixer')
+    closeBtn2.classList.add('active')
+    closeBtn1.classList.remove('active')
 }
 
 openBtn.addEventListener('click', openMobMenu);
 closeBtn.addEventListener('click', closeMobMenu);
 mobMenuOverlay.addEventListener('click', closeMobMenu);
+

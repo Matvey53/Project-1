@@ -13,39 +13,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="js/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            ItcCustomSelect.create('#select-1', {
-                name: 'adress',
-                targetValue: 'По адресу',
-                options: [
-                    ['по адресу', 'По адресу'],
-                    ['самовывоз', 'Самовывоз'],
-                ],
-                onSelected(select, option) {
-                    // выбранное значение
-                    console.log(`Выбранное значение: ${select.value}`);
-                    // индекс выбранной опции
-                    console.log(`Индекс выбранной опции: ${select.selectedIndex}`);
-                    // выбранный текст опции
-                    const text = option ? option.textContent : '';
-                    console.log(`Выбранный текст опции: ${text}`);
-                },
-            });
-            document.querySelector('.itc-select').addEventListener('itc.select.change', (e) => {
-                const btn = e.target.querySelector('.itc-select__toggle');
-                // выбранное значение
-                console.log(`Выбранное значение: ${btn.value}`);
-                // индекс выбранной опции
-                console.log(`Индекс выбранной опции: ${btn.dataset.index}`);
-                // выбранный текст опции
-                const selected = e.target.querySelector('.itc-select__option_selected');
-                const text = selected ? selected.textContent : '';
-                console.log(`Выбранный текст опции: ${text}`);
-            });
-        })
-    </script>
+
+
 
 </head>
 
@@ -128,10 +97,9 @@
                     <span class="mob-menu__btn-line"></span>
                     <span class="mob-menu__btn-line"></span>
                 </button>
-                <button type="button" class="mb mob-menu__btn close-mob-menu" id="mb-2">
+                <button type="button" class="active mob-menu__btn close-mob-menu" id="mb-2">
                     <span class="mob-menu__btn-line"></span>
-                    <span class="mob-menu__btn-line"></span>
-                    <span class="mob-menu__btn-line"></span>
+
                 </button>
             </div>
 
@@ -177,10 +145,47 @@
                     <li class="button-adapt__item"> <a class="adapt-header__account" href="#"> Личный кабинет
                         </a></li>
                     <li class="button-adapt__item">
-                        <button class="adapt-header__call btn-adapt" type="button" id="call-request">FEEDBACK</button>
+                        <button class="adapt-header__call btn-adapt" type="button"
+                            id="call-request-feedback">FEEDBACK</button>
                     </li>
                 </ul>
             </div>
+        </nav>
+    </div>
+    <div class="dialog-2" id="call-request-dialog-2">
+
+        <div class="dialog__overlay-2" id="call-request-overlay-2"></div>
+        <nav class="header__navigation-adapt-2">
+            <ul class="nav__menu-adapt-2">
+
+                <li class="adapt-menu__item-2">
+                    <a href="" class="adapt-menu__link-2">
+                        О нас
+                    </a>
+                </li>
+
+                <li class="adapt-menu__item-2">
+                    <a href="#" class="adapt-menu__link-2">
+                        Аренда
+                    </a>
+                </li>
+                <li class="adapt-menu__item-2">
+                    <a href="#" class="adapt-menu__link-2">
+                        Доставка
+                    </a>
+                </li>
+
+                <li class="adapt-menu__item-2">
+                    <a href="#" class="adapt-menu__link-2">
+                        Где кататься
+                    </a>
+                </li>
+                <li class="adapt-menu__item-2">
+                    <a href="#" class="adapt-menu__link-2">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
         </nav>
     </div>
     <main>
@@ -188,13 +193,13 @@
             <div class="container gray-1">
 
                 <div class="row">
-                    <div class="col">
+                    <div class="col-1">
                         <div class="filter-head">
                             <h1 class="first-screen__title h1"> Аренда велосипедов
                                 c доставкой</h1>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-2">
 
                         <div class="first-screen__cards">
 
@@ -546,8 +551,39 @@
         </div>
 
     </footer>
-
-
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            ItcCustomSelect.create('#select-1', {
+                name: 'adress',
+                targetValue: 'По адресу',
+                options: [
+                    ['по адресу', 'По адресу'],
+                    ['самовывоз', 'Самовывоз'],
+                ],
+                onSelected(select, option) {
+                    // выбранное значение
+                    console.log(`Выбранное значение: ${select.value}`);
+                    // индекс выбранной опции
+                    console.log(`Индекс выбранной опции: ${select.selectedIndex}`);
+                    // выбранный текст опции
+                    const text = option ? option.textContent : '';
+                    console.log(`Выбранный текст опции: ${text}`);
+                },
+            });
+            document.querySelector('.itc-select').addEventListener('itc.select.change', (e) => {
+                const btn = e.target.querySelector('.itc-select__toggle');
+                // выбранное значение
+                console.log(`Выбранное значение: ${btn.value}`);
+                // индекс выбранной опции
+                console.log(`Индекс выбранной опции: ${btn.dataset.index}`);
+                // выбранный текст опции
+                const selected = e.target.querySelector('.itc-select__option_selected');
+                const text = selected ? selected.textContent : '';
+                console.log(`Выбранный текст опции: ${text}`);
+            });
+        })
+    </script>
 </body>
 
 </html>
