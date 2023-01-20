@@ -186,3 +186,36 @@ openBtn.addEventListener('click', openMobMenu);
 closeBtn.addEventListener('click', closeMobMenu);
 mobMenuOverlay.addEventListener('click', closeMobMenu);
 
+
+const openBtn2 = document.querySelector('#mb-3');
+const closeBtn3 = document.querySelector('#mb-4');
+const mobMenu2 = document.querySelector('#call-request-dialog2');
+const mobMenuOverlay2 = document.querySelector('#call-request-overlay2');
+const header2 = document.querySelector('.header')
+const header__navigation = document.querySelector('.header__navigation')
+const mobMenuBtn2 = document.querySelector('.mob-menu__btn2');
+const closeBtn4 = document.querySelector('#mb-3');
+const closeBtn5 = document.querySelector('#mb-4');
+
+
+function openMobMenu2() {
+    mobMenu2.classList.add('dialog_active-2');
+    header.classList.add('fixer')
+    closeBtn4.classList.add('active-2')
+    closeBtn5.classList.remove('active-2')
+    header__navigation.classList.remove('header__navigation')
+    header__navigation.classList.add('header__navigation-active')
+
+}
+function closeMobMenu2() {
+    mobMenu2.classList.remove('dialog_active-2');
+    header.classList.remove('fixer')
+    closeBtn5.classList.add('active-2')
+    closeBtn4.classList.remove('active-2')
+    header__navigation.classList.remove('header__navigation-active')
+    header__navigation.classList.add('header__navigation')
+}
+
+openBtn2.addEventListener('click', openMobMenu2);
+closeBtn3.addEventListener('click', closeMobMenu2);
+mobMenuOverlay2.addEventListener('click', closeMobMenu2);
